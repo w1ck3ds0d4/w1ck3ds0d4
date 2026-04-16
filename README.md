@@ -6,6 +6,7 @@ Full-stack developer building cross-platform apps, games, and security tooling.
 
 <a href="mailto:daniel.svs@outlook.com"><img src="https://img.shields.io/badge/-daniel.svs%40outlook.com-0a192f?style=for-the-badge&logo=microsoftoutlook&logoColor=white&labelColor=0078d4" alt="email" /></a>
 <a href="https://github.com/w1ck3ds0d4"><img src="https://img.shields.io/badge/-w1ck3ds0d4-181717?style=for-the-badge&logo=github&logoColor=white" alt="github" /></a>
+<img src="https://komarev.com/ghpvc/?username=w1ck3ds0d4&style=for-the-badge&color=64ffda&labelColor=0a192f&label=profile+views" alt="views" />
 
 </div>
 
