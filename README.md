@@ -26,6 +26,8 @@ Full-stack developer building cross-platform apps, games, and security tooling.
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white" />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
 </p>
 <p>
@@ -88,6 +90,26 @@ Lightweight Tauri overlay for RuneScape 3 with daily tracker and Grand Exchange 
 Universal dark-mode browser extension that works on any page, any browser.
 
 `MV3` `JavaScript` `cross-browser`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [ThreatLens](https://github.com/w1ck3ds0d4/ThreatLens)
+
+Log aggregation and correlation engine built on .NET Aspire - Postgres, Redis, EF Core, Blazor. Distributed observability included.
+
+`.NET` `Aspire` `EF Core` `Blazor`
+
+</td>
+<td width="50%" valign="top">
+
+### [BlueFlame](https://github.com/w1ck3ds0d4/BlueFlame)
+
+Privacy-first browser shell with an embedded MITM filter proxy. Strips trackers and analytics at the network layer.
+
+`Tauri` `Rust` `React` `hudsucker`
 
 </td>
 </tr>
