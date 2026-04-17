@@ -98,11 +98,11 @@ Universal dark-mode browser extension that works on any page, any browser.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=w1ck3ds0d4&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0a192f&title_color=64ffda&icon_color=64ffda&text_color=ccd6f6" alt="stats" height="170" />
+<img src="https://github-readme-stats.vercel.app/api?username=w1ck3ds0d4&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&icon_color=64ffda&text_color=ccd6f6&hide=issues" alt="stats" height="170" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=w1ck3ds0d4&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&text_color=ccd6f6&langs_count=8" alt="top-langs" height="170" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=w1ck3ds0d4&theme=tokyonight&hide_border=true&background=0a192f&stroke=64ffda&ring=64ffda&fire=64ffda&currStreakLabel=64ffda&sideLabels=ccd6f6&currStreakNum=ccd6f6&sideNums=ccd6f6&dates=8892b0" alt="streak" height="170" />
+<img src="https://streak-stats.demolab.com/?user=w1ck3ds0d4&theme=tokyonight&hide_border=true&background=0a192f&stroke=64ffda&ring=64ffda&fire=64ffda&currStreakLabel=64ffda&sideLabels=ccd6f6&currStreakNum=ccd6f6&sideNums=ccd6f6&dates=8892b0" alt="streak" height="170" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=w1ck3ds0d4&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=8" alt="trophies" />
+<img src="https://github-profile-trophy.vercel.app/?username=w1ck3ds0d4&theme=tokyonight&column=7&margin-w=15&margin-h=15" alt="trophies" />
 
 </div>
