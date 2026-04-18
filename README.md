@@ -60,7 +60,7 @@ Full-stack developer building cross-platform apps, games, and security tooling.
 <tr>
 <td width="50%" valign="top">
 
-### [BlueFlame](https://github.com/w1ck3ds0d4/BlueFlame)
+<a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
 
 Privacy-first browser shell with an embedded MITM filter proxy. Strips trackers and analytics at the network layer. Desktop via Tauri + hudsucker, Android via WebView's native `shouldInterceptRequest`.
 
@@ -69,7 +69,7 @@ Privacy-first browser shell with an embedded MITM filter proxy. Strips trackers 
 </td>
 <td width="50%" valign="top">
 
-### [ThreatLens](https://github.com/w1ck3ds0d4/ThreatLens)
+<a href="https://github.com/w1ck3ds0d4/ThreatLens"><strong>ThreatLens</strong></a>
 
 Log aggregation and correlation engine built on .NET Aspire - Postgres, Redis, EF Core, Blazor. Ingest API, background correlator with regex rules, distributed observability via OpenTelemetry.
 
@@ -80,7 +80,7 @@ Log aggregation and correlation engine built on .NET Aspire - Postgres, Redis, E
 <tr>
 <td width="50%" valign="top">
 
-### [GlassVault](https://github.com/w1ck3ds0d4/GlassVault)
+<a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
 
 Multi-tenant document management API for AI cybersecurity evaluation and training. GraphQL + Apollo backend, React admin UI.
 
@@ -89,7 +89,7 @@ Multi-tenant document management API for AI cybersecurity evaluation and trainin
 </td>
 <td width="50%" valign="top">
 
-### [GlassVault.tools](https://github.com/w1ck3ds0d4/GlassVault.tools)
+<a href="https://github.com/w1ck3ds0d4/GlassVault.tools"><strong>GlassVault.tools</strong></a>
 
 Companion Python tooling for GlassVault: traffic generation, exploit payloads, log tampering, scenario orchestration, AI model scoring against ground-truth manifests.
 
@@ -100,7 +100,7 @@ Companion Python tooling for GlassVault: traffic generation, exploit payloads, l
 <tr>
 <td width="50%" valign="top">
 
-### [DarkVeil](https://github.com/w1ck3ds0d4/DarkVeil)
+<a href="https://github.com/w1ck3ds0d4/DarkVeil"><strong>DarkVeil</strong></a>
 
 Universal dark-mode browser extension that works on any page, any browser. MV3-compatible, cross-browser build.
 
@@ -109,7 +109,7 @@ Universal dark-mode browser extension that works on any page, any browser. MV3-c
 </td>
 <td width="50%" valign="top">
 
-### [RS3-Companion](https://github.com/w1ck3ds0d4/RS3-Companion)
+<a href="https://github.com/w1ck3ds0d4/RS3-Companion"><strong>RS3-Companion</strong></a>
 
 Lightweight Tauri overlay for RuneScape 3 with daily tracker and Grand Exchange flip calculator.
 
