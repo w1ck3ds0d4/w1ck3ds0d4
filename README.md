@@ -1,8 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a192f,100:1e3a8a&height=180&section=header&text=w1ck3ds0d4&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" alt="banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a192f,100:1e3a8a&height=180&section=header&text=w1ck3ds0d4&fontSize=60&fontColor=64ffda&animation=fadeIn&fontAlignY=38&desc=&descAlignY=70" width="100%" alt="banner" />
 
-Full-stack developer building cross-platform apps, games, and security tooling.
+<a href="https://github.com/w1ck3ds0d4">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+full-stack+developer;%3E+intelligence+%26+security+tooling;%3E+AI+evaluation+%26+agents;%3E+shipping+daily+from+Malta" alt="typing" />
+</a>
+
+<br>
 
 <a href="mailto:daniel.svs@outlook.com"><img src="https://img.shields.io/badge/-daniel.svs%40outlook.com-0a192f?style=for-the-badge&logo=microsoftoutlook&logoColor=white&labelColor=0078d4" alt="email" /></a>
 <a href="https://github.com/w1ck3ds0d4"><img src="https://img.shields.io/badge/-w1ck3ds0d4-181717?style=for-the-badge&logo=github&logoColor=white" alt="github" /></a>
@@ -21,7 +25,7 @@ Full-stack developer building cross-platform apps, games, and security tooling.
 
 ## Stack
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -30,7 +34,7 @@ Full-stack developer building cross-platform apps, games, and security tooling.
   <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
 </p>
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white" />
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
@@ -38,14 +42,14 @@ Full-stack developer building cross-platform apps, games, and security tooling.
   <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" />
   <img src="https://img.shields.io/badge/Blazor-512BD4?style=for-the-badge&logo=blazor&logoColor=white" />
 </p>
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
   <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
   <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
   <img src="https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white" />
 </p>
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/CesiumJS-6CADDF?style=for-the-badge&logo=cesium&logoColor=white" />
   <img src="https://img.shields.io/badge/PixiJS-E91E63?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/.NET%20Aspire-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
@@ -179,10 +183,11 @@ Leaning toward an on-device security/ML angle that plays to AMD hardware strengt
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=w1ck3ds0d4&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&icon_color=64ffda&text_color=ccd6f6&hide=issues&cachebust=20260418b" alt="stats" height="170" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=w1ck3ds0d4&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&text_color=ccd6f6&langs_count=8&cachebust=20260418b" alt="top-langs" height="170" />
+<img src="https://github-readme-stats.vercel.app/api?username=w1ck3ds0d4&show_icons=true&count_private=true&include_all_commits=true&card_width=968&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&icon_color=64ffda&text_color=ccd6f6&hide=issues&cachebust=20260418c" alt="stats" />
 
-<img src="assets/streak.svg" alt="streak" height="170" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=w1ck3ds0d4&layout=compact&card_width=968&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&text_color=ccd6f6&langs_count=8&cachebust=20260418c" alt="top-langs" />
+
+<img src="assets/streak.svg" alt="streak" />
 
 <img src="assets/trophies.svg" alt="trophies" />
 

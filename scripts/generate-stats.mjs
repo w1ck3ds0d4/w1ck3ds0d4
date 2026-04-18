@@ -150,7 +150,7 @@ function flameIcon(cx, cy, size, fill, stroke) {
 
 function streakSVG({ totalContributions, streaks, firstYear }) {
   const { current, longest, currentStart, currentEnd, longestStart, longestEnd } = streaks;
-  const w = 495, h = 170, col = w / 3;
+  const w = 968, h = 170, col = w / 3;
   const ringCx = col + col / 2;
   const ringCy = 78;
   const ringR = 38;
