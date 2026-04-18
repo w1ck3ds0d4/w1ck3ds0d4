@@ -138,37 +138,51 @@ function formatShort(iso) {
   return `${m[d.getUTCMonth()]} ${d.getUTCDate()}`;
 }
 
+function flameIcon(cx, cy, size, fill, stroke) {
+  const scale = size / 24;
+  const tx = cx - 12 * scale;
+  const ty = cy - 12 * scale;
+  return `<g transform="translate(${tx},${ty}) scale(${scale})">
+    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"
+          fill="${fill}" stroke="${stroke}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>`;
+}
+
 function streakSVG({ totalContributions, streaks, firstYear }) {
   const { current, longest, currentStart, currentEnd, longestStart, longestEnd } = streaks;
-  const w = 495, h = 195, col = w / 3;
+  const w = 495, h = 170, col = w / 3;
+  const ringCx = col + col / 2;
+  const ringCy = 78;
+  const ringR = 38;
+
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" role="img">
-  <rect width="${w}" height="${h}" fill="${THEME.bg}" rx="4.5"/>
+  <rect width="${w}" height="${h}" fill="${THEME.bg}" rx="6"/>
   <style>
-    .label { font: 600 14px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
-    .value { font: 700 28px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
-    .range { font: 400 12px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.muted}; }
-    .accent { fill: ${THEME.accent}; }
+    .value { font: 700 26px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
+    .value-accent { font: 700 26px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.accent}; }
+    .label { font: 600 13px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
+    .label-accent { font: 700 13px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.accent}; letter-spacing: 0.3px; }
+    .range { font: 400 11px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.muted}; }
   </style>
 
-  <g transform="translate(${col/2},0)">
-    <text x="0" y="65" class="value" text-anchor="middle">${totalContributions.toLocaleString()}</text>
-    <text x="0" y="94" class="label" text-anchor="middle">Total Contributions</text>
-    <text x="0" y="150" class="range" text-anchor="middle">${firstYear} - Present</text>
+  <g transform="translate(${col / 2},0)">
+    <text x="0" y="72" class="value" text-anchor="middle">${totalContributions.toLocaleString()}</text>
+    <text x="0" y="98" class="label" text-anchor="middle">Total Contributions</text>
+    <text x="0" y="130" class="range" text-anchor="middle">${firstYear} - Present</text>
   </g>
 
-  <g transform="translate(${col + col/2},0)">
-    <circle cx="0" cy="75" r="45" fill="none" stroke="${THEME.accent}" stroke-width="5"/>
-    <path d="M -10 40 Q -14 30, -6 22 Q -8 30, 0 26 Q 8 18, 4 8 Q 16 22, 12 36 Q 14 46, 0 48 Q -14 46, -10 40 Z"
-          fill="${THEME.bg}" stroke="${THEME.accent}" stroke-width="1.5" transform="translate(0,-20)"/>
-    <text x="0" y="92" class="value" text-anchor="middle">${current}</text>
-    <text x="0" y="145" class="label accent" text-anchor="middle">Current Streak</text>
-    <text x="0" y="165" class="range" text-anchor="middle">${formatShort(currentStart)} - ${formatShort(currentEnd)}</text>
+  <g transform="translate(${ringCx},0)">
+    <circle cx="0" cy="${ringCy}" r="${ringR}" fill="none" stroke="${THEME.accent}" stroke-width="4"/>
+    ${flameIcon(0, ringCy - ringR - 4, 22, THEME.bg, THEME.accent)}
+    <text x="0" y="${ringCy + 9}" class="value-accent" text-anchor="middle">${current}</text>
+    <text x="0" y="132" class="label-accent" text-anchor="middle">Current Streak</text>
+    <text x="0" y="150" class="range" text-anchor="middle">${formatShort(currentStart)} - ${formatShort(currentEnd)}</text>
   </g>
 
-  <g transform="translate(${2*col + col/2},0)">
-    <text x="0" y="65" class="value" text-anchor="middle">${longest}</text>
-    <text x="0" y="94" class="label" text-anchor="middle">Longest Streak</text>
-    <text x="0" y="150" class="range" text-anchor="middle">${formatShort(longestStart)} - ${formatShort(longestEnd)}</text>
+  <g transform="translate(${2 * col + col / 2},0)">
+    <text x="0" y="72" class="value" text-anchor="middle">${longest}</text>
+    <text x="0" y="98" class="label" text-anchor="middle">Longest Streak</text>
+    <text x="0" y="130" class="range" text-anchor="middle">${formatShort(longestStart)} - ${formatShort(longestEnd)}</text>
   </g>
 </svg>`;
 }
@@ -190,30 +204,37 @@ function trophiesSVG(stats) {
     { label: 'Repos',      value: stats.repos,               ...tierOf(stats.repos,               [5, 10, 25, 50, 100]) },
   ];
 
-  const tileW = 110, tileH = 110, gap = 10;
+  const tileW = 124, tileH = 112, gap = 12;
+  const outerPad = 14;
   const count = tiles.length;
-  const w = count * tileW + (count - 1) * gap;
-  const h = tileH;
+  const w = count * tileW + (count - 1) * gap + outerPad * 2;
+  const h = tileH + outerPad * 2;
 
   const renderTile = (t, i) => {
-    const x = i * (tileW + gap);
+    const x = outerPad + i * (tileW + gap);
+    const active = t.tier > 0;
+    const dotSize = 4;
+    const dotGap = 10;
+    const dotsTotalW = t.max * dotSize * 2 + (t.max - 1) * (dotGap - dotSize * 2);
+    const dotStartX = tileW / 2 - dotsTotalW / 2 + dotSize;
     const dots = Array.from({ length: t.max }, (_, j) => {
       const filled = j < t.tier;
-      const cx = tileW / 2 - ((t.max - 1) * 6) + j * 12;
-      return `<circle cx="${cx}" cy="88" r="3" fill="${filled ? THEME.accent : THEME.muted}" ${filled ? '' : 'opacity="0.4"'}/>`;
+      const cx = dotStartX + j * dotGap;
+      return `<circle cx="${cx}" cy="${tileH - 18}" r="${dotSize}" fill="${filled ? THEME.accent : THEME.muted}" opacity="${filled ? '1' : '0.35'}"/>`;
     }).join('');
-    return `<g transform="translate(${x},0)">
-      <rect width="${tileW}" height="${tileH}" rx="8" fill="${THEME.panel}" stroke="${THEME.accent}" stroke-width="${t.tier > 0 ? 1 : 0}" stroke-opacity="0.3"/>
-      <text x="${tileW/2}" y="32" class="label" text-anchor="middle">${t.label}</text>
-      <text x="${tileW/2}" y="62" class="value" text-anchor="middle">${t.value.toLocaleString()}</text>
+    return `<g transform="translate(${x},${outerPad})">
+      <rect width="${tileW}" height="${tileH}" rx="10" fill="${THEME.panel}" stroke="${active ? THEME.accent : THEME.muted}" stroke-width="1" stroke-opacity="${active ? '0.45' : '0.15'}"/>
+      <text x="${tileW / 2}" y="30" class="label" text-anchor="middle">${t.label}</text>
+      <text x="${tileW / 2}" y="66" class="value" text-anchor="middle" fill="${active ? THEME.text : THEME.muted}">${t.value.toLocaleString()}</text>
       ${dots}
     </g>`;
   };
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" role="img">
+  <rect width="${w}" height="${h}" fill="${THEME.bg}" rx="6"/>
   <style>
-    .label { font: 600 11px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.muted}; letter-spacing: 0.5px; text-transform: uppercase; }
-    .value { font: 700 22px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
+    .label { font: 600 11px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.muted}; letter-spacing: 0.8px; text-transform: uppercase; }
+    .value { font: 700 24px "Segoe UI", Helvetica, sans-serif; }
   </style>
   ${tiles.map(renderTile).join('\n  ')}
 </svg>`;
