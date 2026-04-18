@@ -15,7 +15,7 @@
   <line x1="774.4" y1="35" x2="774.4" y2="135" class="divider"/>
 
   <g transform="translate(96.8,0)">
-    <text x="0" y="72" class="value" text-anchor="middle">3,054</text>
+    <text x="0" y="72" class="value" text-anchor="middle">3,056</text>
     <text x="0" y="98" class="label" text-anchor="middle">Total Contributions</text>
     <text x="0" y="130" class="range" text-anchor="middle">2019 - Present</text>
   </g>
