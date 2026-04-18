@@ -257,18 +257,21 @@ function languagesSVG({ langs }) {
     return svg;
   });
 
-  const legendLeftX = 290;
-  const legendRightX = w / 2 + 60;
+  const legendStartX = 290;
+  const legendEndX = w - 30;
+  const colGap = 30;
+  const legendColW = (legendEndX - legendStartX - colGap) / 2;
+  const legendLeftX = legendStartX;
+  const legendRightX = legendStartX + legendColW + colGap;
   const itemH = 30;
   const legendTopY = 80;
-  const legendWidth = w / 2 - 130;
 
   const legendItems = langs.map((l, i) => {
     const col = i < 5 ? 0 : 1;
     const row = col === 0 ? i : i - 5;
     const x = col === 0 ? legendLeftX : legendRightX;
     const y = legendTopY + row * itemH;
-    const pctX = x + legendWidth - 10;
+    const pctX = x + legendColW;
     return `
     <rect x="${x}" y="${y - 11}" width="12" height="12" rx="3" fill="${l.color}"/>
     <text x="${x + 22}" y="${y}" class="lang-name">${l.name}</text>
