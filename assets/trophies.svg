@@ -1,48 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="830" height="110" viewBox="0 0 830 110" fill="none" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="968" height="140" viewBox="0 0 968 140" fill="none" role="img">
+  <rect width="968" height="140" fill="#0a192f" rx="6"/>
   <style>
-    .label { font: 600 11px "Segoe UI", Helvetica, sans-serif; fill: #8892b0; letter-spacing: 0.5px; text-transform: uppercase; }
-    .value { font: 700 22px "Segoe UI", Helvetica, sans-serif; fill: #ccd6f6; }
+    .label { font: 600 11px "Segoe UI", Helvetica, sans-serif; fill: #8892b0; letter-spacing: 0.8px; text-transform: uppercase; }
+    .value { font: 700 24px "Segoe UI", Helvetica, sans-serif; }
   </style>
-  <g transform="translate(0,0)">
-      <rect width="110" height="110" rx="8" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.3"/>
-      <text x="55" y="32" class="label" text-anchor="middle">Commits</text>
-      <text x="55" y="62" class="value" text-anchor="middle">389</text>
-      <circle cx="31" cy="88" r="3" fill="#64ffda" /><circle cx="43" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="55" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="67" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="79" cy="88" r="3" fill="#8892b0" opacity="0.4"/>
+  <g transform="translate(14,14)">
+      <rect width="124" height="112" rx="10" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="62" y="30" class="label" text-anchor="middle">Commits</text>
+      <text x="62" y="66" class="value" text-anchor="middle" fill="#ccd6f6">391</text>
+      <circle cx="42" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="52" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="62" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="72" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="82" cy="94" r="4" fill="#8892b0" opacity="0.35"/>
     </g>
-  <g transform="translate(120,0)">
-      <rect width="110" height="110" rx="8" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.3"/>
-      <text x="55" y="32" class="label" text-anchor="middle">Contribs</text>
-      <text x="55" y="62" class="value" text-anchor="middle">3,048</text>
-      <circle cx="31" cy="88" r="3" fill="#64ffda" /><circle cx="43" cy="88" r="3" fill="#64ffda" /><circle cx="55" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="67" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="79" cy="88" r="3" fill="#8892b0" opacity="0.4"/>
+  <g transform="translate(150,14)">
+      <rect width="124" height="112" rx="10" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="62" y="30" class="label" text-anchor="middle">Contribs</text>
+      <text x="62" y="66" class="value" text-anchor="middle" fill="#ccd6f6">3,051</text>
+      <circle cx="42" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="52" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="62" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="72" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="82" cy="94" r="4" fill="#8892b0" opacity="0.35"/>
     </g>
-  <g transform="translate(240,0)">
-      <rect width="110" height="110" rx="8" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.3"/>
-      <text x="55" y="32" class="label" text-anchor="middle">Streak</text>
-      <text x="55" y="62" class="value" text-anchor="middle">94</text>
-      <circle cx="31" cy="88" r="3" fill="#64ffda" /><circle cx="43" cy="88" r="3" fill="#64ffda" /><circle cx="55" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="67" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="79" cy="88" r="3" fill="#8892b0" opacity="0.4"/>
+  <g transform="translate(286,14)">
+      <rect width="124" height="112" rx="10" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="62" y="30" class="label" text-anchor="middle">Streak</text>
+      <text x="62" y="66" class="value" text-anchor="middle" fill="#ccd6f6">94</text>
+      <circle cx="42" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="52" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="62" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="72" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="82" cy="94" r="4" fill="#8892b0" opacity="0.35"/>
     </g>
-  <g transform="translate(360,0)">
-      <rect width="110" height="110" rx="8" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.3"/>
-      <text x="55" y="32" class="label" text-anchor="middle">PRs</text>
-      <text x="55" y="62" class="value" text-anchor="middle">23</text>
-      <circle cx="31" cy="88" r="3" fill="#64ffda" /><circle cx="43" cy="88" r="3" fill="#64ffda" /><circle cx="55" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="67" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="79" cy="88" r="3" fill="#8892b0" opacity="0.4"/>
+  <g transform="translate(422,14)">
+      <rect width="124" height="112" rx="10" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="62" y="30" class="label" text-anchor="middle">PRs</text>
+      <text x="62" y="66" class="value" text-anchor="middle" fill="#ccd6f6">23</text>
+      <circle cx="42" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="52" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="62" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="72" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="82" cy="94" r="4" fill="#8892b0" opacity="0.35"/>
     </g>
-  <g transform="translate(480,0)">
-      <rect width="110" height="110" rx="8" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.3"/>
-      <text x="55" y="32" class="label" text-anchor="middle">Stars</text>
-      <text x="55" y="62" class="value" text-anchor="middle">1</text>
-      <circle cx="31" cy="88" r="3" fill="#64ffda" /><circle cx="43" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="55" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="67" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="79" cy="88" r="3" fill="#8892b0" opacity="0.4"/>
+  <g transform="translate(558,14)">
+      <rect width="124" height="112" rx="10" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="62" y="30" class="label" text-anchor="middle">Stars</text>
+      <text x="62" y="66" class="value" text-anchor="middle" fill="#ccd6f6">1</text>
+      <circle cx="42" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="52" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="62" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="72" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="82" cy="94" r="4" fill="#8892b0" opacity="0.35"/>
     </g>
-  <g transform="translate(600,0)">
-      <rect width="110" height="110" rx="8" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.3"/>
-      <text x="55" y="32" class="label" text-anchor="middle">Followers</text>
-      <text x="55" y="62" class="value" text-anchor="middle">2</text>
-      <circle cx="31" cy="88" r="3" fill="#64ffda" /><circle cx="43" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="55" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="67" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="79" cy="88" r="3" fill="#8892b0" opacity="0.4"/>
+  <g transform="translate(694,14)">
+      <rect width="124" height="112" rx="10" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="62" y="30" class="label" text-anchor="middle">Followers</text>
+      <text x="62" y="66" class="value" text-anchor="middle" fill="#ccd6f6">2</text>
+      <circle cx="42" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="52" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="62" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="72" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="82" cy="94" r="4" fill="#8892b0" opacity="0.35"/>
     </g>
-  <g transform="translate(720,0)">
-      <rect width="110" height="110" rx="8" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.3"/>
-      <text x="55" y="32" class="label" text-anchor="middle">Repos</text>
-      <text x="55" y="62" class="value" text-anchor="middle">7</text>
-      <circle cx="31" cy="88" r="3" fill="#64ffda" /><circle cx="43" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="55" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="67" cy="88" r="3" fill="#8892b0" opacity="0.4"/><circle cx="79" cy="88" r="3" fill="#8892b0" opacity="0.4"/>
+  <g transform="translate(830,14)">
+      <rect width="124" height="112" rx="10" fill="#112240" stroke="#64ffda" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="62" y="30" class="label" text-anchor="middle">Repos</text>
+      <text x="62" y="66" class="value" text-anchor="middle" fill="#ccd6f6">7</text>
+      <circle cx="42" cy="94" r="4" fill="#64ffda" opacity="1"/><circle cx="52" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="62" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="72" cy="94" r="4" fill="#8892b0" opacity="0.35"/><circle cx="82" cy="94" r="4" fill="#8892b0" opacity="0.35"/>
     </g>
 </svg>
