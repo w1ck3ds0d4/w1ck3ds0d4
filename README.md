@@ -3,7 +3,7 @@
 <img src="assets/banner.svg?v=202604182243" alt="banner" />
 
 <a href="https://github.com/w1ck3ds0d4">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Full+Stack+Developer;%3E+Cybersecurity;%3E+DevOps;%3E+AI+Engineering" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Full+Stack+Developer;%3E+Security+Engineer;%3E+DevOps+Engineer;%3E+AI+Engineer" alt="typing" />
 </a>
 
 <br>
