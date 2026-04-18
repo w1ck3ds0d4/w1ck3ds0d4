@@ -170,7 +170,7 @@ Leaning toward an on-device security/ML angle that plays to AMD hardware strengt
 
 ---
 
-## GitHub
+## Statistics
 
 <div align="center">
 
