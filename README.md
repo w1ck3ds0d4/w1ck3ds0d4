@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg?v=202604182237" alt="banner" />
+<img src="assets/banner.svg?v=202604182243" alt="banner" />
 
 <a href="https://github.com/w1ck3ds0d4">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Full+Stack+Developer;%3E+Cybersecurity;%3E+DevOps;%3E+AI+Engineering" alt="typing" />
@@ -183,12 +183,12 @@ Leaning toward an on-device security/ML angle that plays to AMD hardware strengt
 
 <div align="center">
 
-<img src="assets/stats.svg?v=202604182237" alt="stats" />
+<img src="assets/stats.svg?v=202604182243" alt="stats" />
 
-<img src="assets/languages.svg?v=202604182237" alt="languages" />
+<img src="assets/languages.svg?v=202604182243" alt="languages" />
 
-<img src="assets/streak.svg?v=202604182237" alt="streak" />
+<img src="assets/streak.svg?v=202604182243" alt="streak" />
 
-<img src="assets/trophies.svg?v=202604182237" alt="trophies" />
+<img src="assets/trophies.svg?v=202604182243" alt="trophies" />
 
 </div>
