@@ -1,27 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="968" height="190" viewBox="0 0 968 190" fill="none" role="img">
-  <rect width="968" height="190" fill="#0a192f" rx="6"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="968" height="210" viewBox="0 0 968 210" fill="none" role="img">
+  <rect width="968" height="210" fill="#0a192f" rx="6"/>
   <style>
     .title { font: 700 15px "Segoe UI", Helvetica, sans-serif; fill: #64ffda; letter-spacing: 0.5px; }
     .label { font: 600 14px "Segoe UI", Helvetica, sans-serif; fill: #ccd6f6; }
     .value { font: 700 14px "Segoe UI", Helvetica, sans-serif; fill: #64ffda; }
   </style>
-  <text x="30" y="24" class="title">GitHub Stats</text>
-  <line x1="484" y1="32" x2="484" y2="170" stroke="#8892b0" stroke-opacity="0.2"/>
+  <text x="30" y="30" class="title">GitHub Stats</text>
+  <line x1="484" y1="55" x2="484" y2="190" stroke="#8892b0" stroke-opacity="0.2"/>
   
-    <text x="30" y="42" class="label">Total Stars Earned</text>
-    <text x="454" y="42" class="value" text-anchor="end">1</text>
-    <text x="514" y="42" class="label">Merge Rate</text>
-    <text x="938" y="42" class="value" text-anchor="end">100%</text>
-    <text x="30" y="74" class="label">Total Commits</text>
-    <text x="454" y="74" class="value" text-anchor="end">395</text>
-    <text x="514" y="74" class="label">Total Reviews</text>
-    <text x="938" y="74" class="value" text-anchor="end">0</text>
-    <text x="30" y="106" class="label">Total PRs</text>
-    <text x="454" y="106" class="value" text-anchor="end">25</text>
-    <text x="514" y="106" class="label">Followers</text>
-    <text x="938" y="106" class="value" text-anchor="end">2</text>
-    <text x="30" y="138" class="label">Total PRs Merged</text>
-    <text x="454" y="138" class="value" text-anchor="end">25</text>
-    <text x="514" y="138" class="label">Repositories</text>
-    <text x="938" y="138" class="value" text-anchor="end">7</text>
+    <text x="30" y="70" class="label">Total Stars Earned</text>
+    <text x="454" y="70" class="value" text-anchor="end">1</text>
+    <text x="514" y="70" class="label">Merge Rate</text>
+    <text x="938" y="70" class="value" text-anchor="end">100%</text>
+    <text x="30" y="102" class="label">Total Commits</text>
+    <text x="454" y="102" class="value" text-anchor="end">395</text>
+    <text x="514" y="102" class="label">Total Reviews</text>
+    <text x="938" y="102" class="value" text-anchor="end">0</text>
+    <text x="30" y="134" class="label">Total PRs</text>
+    <text x="454" y="134" class="value" text-anchor="end">25</text>
+    <text x="514" y="134" class="label">Followers</text>
+    <text x="938" y="134" class="value" text-anchor="end">2</text>
+    <text x="30" y="166" class="label">Total PRs Merged</text>
+    <text x="454" y="166" class="value" text-anchor="end">25</text>
+    <text x="514" y="166" class="label">Repositories</text>
+    <text x="938" y="166" class="value" text-anchor="end">7</text>
 </svg>
