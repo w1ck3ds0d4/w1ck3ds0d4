@@ -34,6 +34,11 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
+            TS=$(date -u +%Y%m%d%H%M)
+            for svg in stats languages streak trophies; do
+              sed -i -E "s|(assets/${svg}\.svg)(\?v=[A-Za-z0-9]+)?|\1?v=${TS}|g" README.md
+            done
+            git add README.md
             git commit -m "(chore) refresh profile stats"
             git push
           fi

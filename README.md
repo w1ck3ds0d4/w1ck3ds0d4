@@ -183,12 +183,12 @@ Leaning toward an on-device security/ML angle that plays to AMD hardware strengt
 
 <div align="center">
 
-<img src="assets/stats.svg" alt="stats" />
+<img src="assets/stats.svg?v=20260419a" alt="stats" />
 
-<img src="assets/languages.svg" alt="languages" />
+<img src="assets/languages.svg?v=20260419a" alt="languages" />
 
-<img src="assets/streak.svg" alt="streak" />
+<img src="assets/streak.svg?v=20260419a" alt="streak" />
 
-<img src="assets/trophies.svg" alt="trophies" />
+<img src="assets/trophies.svg?v=20260419a" alt="trophies" />
 
 </div>
