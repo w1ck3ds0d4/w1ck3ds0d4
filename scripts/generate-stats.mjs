@@ -148,12 +148,13 @@ function flameIcon(cx, cy, size, fill, stroke) {
   </g>`;
 }
 
-function streakSVG({ totalContributions, streaks, firstYear }) {
+function streakSVG({ totalContributions, streaks, firstYear, activeDays, totalDays, bestDay }) {
   const { current, longest, currentStart, currentEnd, longestStart, longestEnd } = streaks;
-  const w = 968, h = 170, col = w / 3;
+  const w = 968, h = 170, cols = 5, col = w / cols;
   const ringCx = col + col / 2;
   const ringCy = 78;
   const ringR = 38;
+  const activeRate = totalDays ? Math.round((activeDays / totalDays) * 100) : 0;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" role="img">
   <rect width="${w}" height="${h}" fill="${THEME.bg}" rx="6"/>
@@ -163,7 +164,13 @@ function streakSVG({ totalContributions, streaks, firstYear }) {
     .label { font: 600 13px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
     .label-accent { font: 700 13px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.accent}; letter-spacing: 0.3px; }
     .range { font: 400 11px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.muted}; }
+    .divider { stroke: ${THEME.muted}; stroke-opacity: 0.15; }
   </style>
+
+  <line x1="${col}" y1="35" x2="${col}" y2="135" class="divider"/>
+  <line x1="${2 * col}" y1="35" x2="${2 * col}" y2="135" class="divider"/>
+  <line x1="${3 * col}" y1="35" x2="${3 * col}" y2="135" class="divider"/>
+  <line x1="${4 * col}" y1="35" x2="${4 * col}" y2="135" class="divider"/>
 
   <g transform="translate(${col / 2},0)">
     <text x="0" y="72" class="value" text-anchor="middle">${totalContributions.toLocaleString()}</text>
@@ -183,6 +190,18 @@ function streakSVG({ totalContributions, streaks, firstYear }) {
     <text x="0" y="72" class="value" text-anchor="middle">${longest}</text>
     <text x="0" y="98" class="label" text-anchor="middle">Longest Streak</text>
     <text x="0" y="130" class="range" text-anchor="middle">${formatShort(longestStart)} - ${formatShort(longestEnd)}</text>
+  </g>
+
+  <g transform="translate(${3 * col + col / 2},0)">
+    <text x="0" y="72" class="value" text-anchor="middle">${activeDays.toLocaleString()}</text>
+    <text x="0" y="98" class="label" text-anchor="middle">Active Days</text>
+    <text x="0" y="130" class="range" text-anchor="middle">${activeRate}% of ${totalDays.toLocaleString()} days</text>
+  </g>
+
+  <g transform="translate(${4 * col + col / 2},0)">
+    <text x="0" y="72" class="value" text-anchor="middle">${bestDay.count.toLocaleString()}</text>
+    <text x="0" y="98" class="label" text-anchor="middle">Best Day</text>
+    <text x="0" y="130" class="range" text-anchor="middle">${bestDay.date ? formatShort(bestDay.date) : '-'}</text>
   </g>
 </svg>`;
 }
@@ -246,6 +265,10 @@ async function main() {
   const streaks = computeStreaks(raw.days);
   const firstYear = raw.createdAt.getUTCFullYear();
 
+  const totalDays = raw.days.length;
+  const activeDays = raw.days.filter(d => d.count > 0).length;
+  const bestDay = raw.days.reduce((best, d) => d.count > best.count ? d : best, { date: null, count: 0 });
+
   const stats = {
     totalContributions: raw.totalContributions,
     totalCommits: raw.totalCommits,
@@ -258,9 +281,17 @@ async function main() {
 
   console.log('Streak:', streaks);
   console.log('Totals:', { commits: stats.totalCommits, contribs: stats.totalContributions, stars: stats.stars, followers: stats.followers, prs: stats.mergedPRs, repos: stats.repos });
+  console.log('Activity:', { activeDays, totalDays, bestDay });
 
   await fs.mkdir(OUT_DIR, { recursive: true });
-  await fs.writeFile(path.join(OUT_DIR, 'streak.svg'), streakSVG({ totalContributions: raw.totalContributions, streaks, firstYear }));
+  await fs.writeFile(path.join(OUT_DIR, 'streak.svg'), streakSVG({
+    totalContributions: raw.totalContributions,
+    streaks,
+    firstYear,
+    activeDays,
+    totalDays,
+    bestDay,
+  }));
   await fs.writeFile(path.join(OUT_DIR, 'trophies.svg'), trophiesSVG(stats));
   console.log('Wrote assets/streak.svg and assets/trophies.svg');
 }
