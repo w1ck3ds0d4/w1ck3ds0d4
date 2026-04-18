@@ -178,9 +178,9 @@ function formatShort(iso) {
 }
 
 function statsSVG(stats) {
-  const w = 968, h = 190;
+  const w = 968, h = 210;
   const pad = 30;
-  const startY = 42;
+  const startY = 70;
   const rowH = 32;
   const mergeRate = stats.totalPRs ? Math.round((stats.mergedPRs / stats.totalPRs) * 100) : 0;
 
@@ -220,8 +220,8 @@ function statsSVG(stats) {
     .label { font: 600 14px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
     .value { font: 700 14px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.accent}; }
   </style>
-  <text x="${pad}" y="24" class="title">GitHub Stats</text>
-  <line x1="${w / 2}" y1="32" x2="${w / 2}" y2="${h - 20}" stroke="${THEME.muted}" stroke-opacity="0.2"/>
+  <text x="${pad}" y="30" class="title">GitHub Stats</text>
+  <line x1="${w / 2}" y1="55" x2="${w / 2}" y2="${h - 20}" stroke="${THEME.muted}" stroke-opacity="0.2"/>
   ${rows}
 </svg>`;
 }
@@ -243,9 +243,9 @@ function donutSlice(cx, cy, outerR, innerR, startAngle, endAngle, color) {
 }
 
 function languagesSVG({ langs }) {
-  const w = 968, h = 220;
+  const w = 968, h = 250;
   const donutCx = 130;
-  const donutCy = h / 2;
+  const donutCy = 145;
   const outerR = 78;
   const innerR = 50;
 
@@ -260,7 +260,7 @@ function languagesSVG({ langs }) {
   const legendLeftX = 290;
   const legendRightX = w / 2 + 60;
   const itemH = 30;
-  const legendTopY = 40;
+  const legendTopY = 80;
   const legendWidth = w / 2 - 130;
 
   const legendItems = langs.map((l, i) => {
@@ -282,7 +282,7 @@ function languagesSVG({ langs }) {
     .lang-name { font: 600 13px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
     .lang-pct { font: 400 13px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.muted}; }
   </style>
-  <text x="30" y="24" class="title">Most Used Languages</text>
+  <text x="30" y="30" class="title">Most Used Languages</text>
   ${slices.join('')}
   ${legendItems}
 </svg>`;
