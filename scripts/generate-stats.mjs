@@ -179,50 +179,72 @@ function formatShort(iso) {
 
 function bannerSVG() {
   const w = 968, h = 180;
-  const charW = 18;
-  const charH = 18;
-  const cols = Math.floor(w / charW);
-  const charsPerCol = 14;
-  const totalColH = charsPerCol * charH;
-
   const pool = 'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789';
   const rand = () => pool[Math.floor(Math.random() * pool.length)];
 
-  const columns = [];
-  for (let c = 0; c < cols; c++) {
-    const x = c * charW + 9;
-    const dur = (3 + Math.random() * 4).toFixed(2);
-    const delay = (-Math.random() * Number(dur)).toFixed(2);
-    const tspans = [];
-    for (let i = 0; i < charsPerCol; i++) {
-      const isHead = i === charsPerCol - 1;
-      const opacity = isHead ? '1' : ((i + 1) / charsPerCol * 0.85).toFixed(2);
-      const fill = isHead ? '#ffffff' : '#64ffda';
-      tspans.push(`<tspan x="${x}" y="${(i + 1) * charH}" fill="${fill}" fill-opacity="${opacity}">${rand()}</tspan>`);
-    }
-    columns.push(`<g>
-      <text class="rain">${tspans.join('')}</text>
-      <animateTransform attributeName="transform" type="translate" from="0 ${-totalColH}" to="0 ${h + totalColH}" dur="${dur}s" begin="${delay}s" repeatCount="indefinite"/>
-    </g>`);
-  }
+  const layers = [
+    { count: 22, charH: 22, fontSize: 12, charsPerCol: 9,  minDur: 6,   maxDur: 11, layerOpacity: 0.4, headColor: '#5ecdb4' },
+    { count: 36, charH: 20, fontSize: 15, charsPerCol: 12, minDur: 3,   maxDur: 7,  layerOpacity: 0.75, headColor: '#aaffee' },
+    { count: 22, charH: 24, fontSize: 18, charsPerCol: 13, minDur: 1.5, maxDur: 4,  layerOpacity: 1,    headColor: '#ffffff' },
+  ];
 
+  const renderLayer = (layer) => {
+    const cols = [];
+    for (let c = 0; c < layer.count; c++) {
+      const x = Math.floor(Math.random() * (w - 20)) + 10;
+      const dur = (layer.minDur + Math.random() * (layer.maxDur - layer.minDur)).toFixed(2);
+      const delay = (-Math.random() * Number(dur)).toFixed(2);
+      const totalColH = layer.charsPerCol * layer.charH;
+      const tspans = [];
+      for (let i = 0; i < layer.charsPerCol; i++) {
+        const isHead = i === layer.charsPerCol - 1;
+        const fade = isHead ? 1 : ((i + 1) / layer.charsPerCol) * 0.85;
+        const fill = isHead ? layer.headColor : '#64ffda';
+        const opacity = (fade * layer.layerOpacity).toFixed(2);
+        tspans.push(`<tspan x="${x}" y="${(i + 1) * layer.charH}" fill="${fill}" fill-opacity="${opacity}">${rand()}</tspan>`);
+      }
+      cols.push(`<g><text font-size="${layer.fontSize}" font-family="Fira Code,Courier New,monospace" font-weight="600" filter="url(#char-glow)">${tspans.join('')}</text><animateTransform attributeName="transform" type="translate" from="0 ${-totalColH}" to="0 ${h + totalColH}" dur="${dur}s" begin="${delay}s" repeatCount="indefinite"/></g>`);
+    }
+    return cols.join('');
+  };
+
+  const allRain = layers.map(renderLayer).join('');
+
+  const cx = w / 2;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="w1ck3ds0d4">
-  <style>
-    .rain { font-family: 'Fira Code', 'Courier New', monospace; font-size: 15px; font-weight: 600; }
-    .title { font-family: 'Segoe UI', Helvetica, sans-serif; font-weight: 800; font-size: 64px; fill: #64ffda; letter-spacing: 2px; }
-  </style>
   <defs>
     <clipPath id="banner-clip"><rect width="${w}" height="${h}" rx="8"/></clipPath>
     <linearGradient id="banner-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0a192f"/>
-      <stop offset="100%" stop-color="#112240"/>
+      <stop offset="0%" stop-color="#050b17"/>
+      <stop offset="50%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#050b17"/>
     </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="60%">
+      <stop offset="50%" stop-color="#0a192f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6"/>
+    </radialGradient>
+    <filter id="char-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="title-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scanlines" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#64ffda" fill-opacity="0.05"/>
+    </pattern>
   </defs>
   <g clip-path="url(#banner-clip)">
     <rect width="${w}" height="${h}" fill="url(#banner-bg)"/>
-    ${columns.join('')}
-    <rect width="${w}" height="${h}" fill="#0a192f" fill-opacity="0.4"/>
-    <text x="${w / 2}" y="${h / 2 + 22}" text-anchor="middle" class="title" stroke="#0a192f" stroke-width="3" paint-order="stroke fill">w1ck3ds0d4</text>
+    ${allRain}
+    <rect width="${w}" height="${h}" fill="url(#scanlines)"/>
+    <rect width="${w}" height="${h}" fill="url(#vignette)"/>
+    <rect x="${cx - 185}" y="${h / 2 - 40}" width="370" height="80" rx="6" fill="#0a192f" fill-opacity="0.55"/>
+    <g filter="url(#title-glow)">
+      <text x="${cx}" y="${h / 2 + 22}" text-anchor="middle" font-family="Segoe UI,Helvetica,sans-serif" font-weight="800" font-size="64" letter-spacing="2" fill="#64ffda" stroke="#0a192f" stroke-width="3" paint-order="stroke fill">w1ck3ds0d4<animate attributeName="fill" values="#64ffda;#64ffda;#64ffda;#ffffff;#64ffda;#64ffda;#64ffda;#64ffda;#64ffda;#64ffda" dur="6s" repeatCount="indefinite"/></text>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 0;0 0;3 0;-3 0;2 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0" dur="6s" repeatCount="indefinite"/>
+    </g>
   </g>
 </svg>`;
 }
