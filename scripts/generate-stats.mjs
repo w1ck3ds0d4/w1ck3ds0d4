@@ -40,7 +40,9 @@ async function fetchStats() {
     user(login: "${USER}") {
       createdAt
       followers { totalCount }
-      pullRequests(states: MERGED) { totalCount }
+      allPRs: pullRequests { totalCount }
+      mergedPRs: pullRequests(states: MERGED) { totalCount }
+      issues { totalCount }
       repositories(ownerAffiliations: OWNER, first: 100) {
         totalCount
         nodes { stargazerCount }
@@ -51,7 +53,9 @@ async function fetchStats() {
   const u = meta.user;
   const stars = u.repositories.nodes.reduce((a, r) => a + r.stargazerCount, 0);
   const followers = u.followers.totalCount;
-  const mergedPRs = u.pullRequests.totalCount;
+  const totalPRs = u.allPRs.totalCount;
+  const mergedPRs = u.mergedPRs.totalCount;
+  const issues = u.issues.totalCount;
   const repos = u.repositories.totalCount;
 
   const createdAt = new Date(u.createdAt);
@@ -62,6 +66,7 @@ async function fetchStats() {
   const dayMap = new Map();
   let totalContributions = 0;
   let totalCommits = 0;
+  let totalReviews = 0;
 
   for (let year = startYear; year <= endYear; year++) {
     const from = year === startYear ? createdAt.toISOString() : `${year}-01-01T00:00:00Z`;
@@ -70,6 +75,7 @@ async function fetchStats() {
       user(login: "${USER}") {
         contributionsCollection(from: "${from}", to: "${to}") {
           totalCommitContributions
+          totalPullRequestReviewContributions
           contributionCalendar {
             totalContributions
             weeks {
@@ -82,6 +88,7 @@ async function fetchStats() {
     const c = data.user.contributionsCollection;
     totalContributions += c.contributionCalendar.totalContributions;
     totalCommits += c.totalCommitContributions;
+    totalReviews += c.totalPullRequestReviewContributions;
     for (const w of c.contributionCalendar.weeks) {
       for (const d of w.contributionDays) {
         if (!dayMap.has(d.date)) dayMap.set(d.date, d.contributionCount);
@@ -93,7 +100,39 @@ async function fetchStats() {
     .map(([date, count]) => ({ date, count }))
     .sort((a, b) => a.date.localeCompare(b.date));
 
-  return { days, totalContributions, totalCommits, stars, followers, mergedPRs, repos, createdAt };
+  return { days, totalContributions, totalCommits, totalReviews, stars, followers, totalPRs, mergedPRs, issues, repos, createdAt };
+}
+
+async function fetchLanguages() {
+  const data = await gql(`{
+    user(login: "${USER}") {
+      repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
+        nodes {
+          languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+            edges { size node { name color } }
+          }
+        }
+      }
+    }
+  }`);
+
+  const totals = new Map();
+  for (const repo of data.user.repositories.nodes) {
+    if (!repo || !repo.languages) continue;
+    for (const edge of repo.languages.edges) {
+      const key = edge.node.name;
+      const prev = totals.get(key) || { size: 0, color: edge.node.color };
+      prev.size += edge.size;
+      if (!prev.color && edge.node.color) prev.color = edge.node.color;
+      totals.set(key, prev);
+    }
+  }
+  const totalSize = [...totals.values()].reduce((a, b) => a + b.size, 0) || 1;
+  const langs = [...totals.entries()]
+    .map(([name, d]) => ({ name, size: d.size, color: d.color || '#8892b0', pct: d.size / totalSize * 100 }))
+    .sort((a, b) => b.size - a.size)
+    .slice(0, 10);
+  return { langs, totalSize };
 }
 
 function computeStreaks(days) {
@@ -136,6 +175,117 @@ function formatShort(iso) {
   const d = new Date(iso + 'T00:00:00Z');
   const m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   return `${m[d.getUTCMonth()]} ${d.getUTCDate()}`;
+}
+
+function statsSVG(stats) {
+  const w = 968, h = 190;
+  const pad = 30;
+  const startY = 42;
+  const rowH = 32;
+  const mergeRate = stats.totalPRs ? Math.round((stats.mergedPRs / stats.totalPRs) * 100) : 0;
+
+  const left = [
+    { label: 'Total Stars Earned', value: stats.stars },
+    { label: 'Total Commits',       value: stats.totalCommits },
+    { label: 'Total PRs',           value: stats.totalPRs },
+    { label: 'Total PRs Merged',    value: stats.mergedPRs },
+  ];
+  const right = [
+    { label: 'Merge Rate',          value: mergeRate + '%' },
+    { label: 'Total Reviews',       value: stats.totalReviews },
+    { label: 'Followers',           value: stats.followers },
+    { label: 'Repositories',        value: stats.repos },
+  ];
+
+  const fmt = v => typeof v === 'number' ? v.toLocaleString() : v;
+  const col1LabelX = pad;
+  const col1ValueX = w / 2 - pad;
+  const col2LabelX = w / 2 + pad;
+  const col2ValueX = w - pad;
+
+  const rows = left.map((l, i) => {
+    const r = right[i];
+    const y = startY + i * rowH;
+    return `
+    <text x="${col1LabelX}" y="${y}" class="label">${l.label}</text>
+    <text x="${col1ValueX}" y="${y}" class="value" text-anchor="end">${fmt(l.value)}</text>
+    <text x="${col2LabelX}" y="${y}" class="label">${r.label}</text>
+    <text x="${col2ValueX}" y="${y}" class="value" text-anchor="end">${fmt(r.value)}</text>`;
+  }).join('');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" role="img">
+  <rect width="${w}" height="${h}" fill="${THEME.bg}" rx="6"/>
+  <style>
+    .title { font: 700 15px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.accent}; letter-spacing: 0.5px; }
+    .label { font: 600 14px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
+    .value { font: 700 14px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.accent}; }
+  </style>
+  <text x="${pad}" y="24" class="title">GitHub Stats</text>
+  <line x1="${w / 2}" y1="32" x2="${w / 2}" y2="${h - 20}" stroke="${THEME.muted}" stroke-opacity="0.2"/>
+  ${rows}
+</svg>`;
+}
+
+function polarToCartesian(cx, cy, r, angleDeg) {
+  const rad = (angleDeg - 90) * Math.PI / 180;
+  return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
+}
+
+function donutSlice(cx, cy, outerR, innerR, startAngle, endAngle, color) {
+  const safeEnd = endAngle - startAngle >= 360 ? startAngle + 359.99 : endAngle;
+  const largeArc = safeEnd - startAngle > 180 ? 1 : 0;
+  const o1 = polarToCartesian(cx, cy, outerR, startAngle);
+  const o2 = polarToCartesian(cx, cy, outerR, safeEnd);
+  const i1 = polarToCartesian(cx, cy, innerR, safeEnd);
+  const i2 = polarToCartesian(cx, cy, innerR, startAngle);
+  const d = `M ${o1.x} ${o1.y} A ${outerR} ${outerR} 0 ${largeArc} 1 ${o2.x} ${o2.y} L ${i1.x} ${i1.y} A ${innerR} ${innerR} 0 ${largeArc} 0 ${i2.x} ${i2.y} Z`;
+  return `<path d="${d}" fill="${color}"/>`;
+}
+
+function languagesSVG({ langs }) {
+  const w = 968, h = 220;
+  const donutCx = 130;
+  const donutCy = h / 2;
+  const outerR = 78;
+  const innerR = 50;
+
+  let angle = 0;
+  const slices = langs.map(l => {
+    const sweep = (l.pct / 100) * 360;
+    const svg = donutSlice(donutCx, donutCy, outerR, innerR, angle, angle + sweep, l.color);
+    angle += sweep;
+    return svg;
+  });
+
+  const legendLeftX = 290;
+  const legendRightX = w / 2 + 60;
+  const itemH = 30;
+  const legendTopY = 40;
+  const legendWidth = w / 2 - 130;
+
+  const legendItems = langs.map((l, i) => {
+    const col = i < 5 ? 0 : 1;
+    const row = col === 0 ? i : i - 5;
+    const x = col === 0 ? legendLeftX : legendRightX;
+    const y = legendTopY + row * itemH;
+    const pctX = x + legendWidth - 10;
+    return `
+    <rect x="${x}" y="${y - 11}" width="12" height="12" rx="3" fill="${l.color}"/>
+    <text x="${x + 22}" y="${y}" class="lang-name">${l.name}</text>
+    <text x="${pctX}" y="${y}" class="lang-pct" text-anchor="end">${l.pct.toFixed(2)}%</text>`;
+  }).join('');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" role="img">
+  <rect width="${w}" height="${h}" fill="${THEME.bg}" rx="6"/>
+  <style>
+    .title { font: 700 15px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.accent}; letter-spacing: 0.5px; }
+    .lang-name { font: 600 13px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.text}; }
+    .lang-pct { font: 400 13px "Segoe UI", Helvetica, sans-serif; fill: ${THEME.muted}; }
+  </style>
+  <text x="30" y="24" class="title">Most Used Languages</text>
+  ${slices.join('')}
+  ${legendItems}
+</svg>`;
 }
 
 function flameIcon(cx, cy, size, fill, stroke) {
@@ -262,6 +412,7 @@ function trophiesSVG(stats) {
 async function main() {
   console.log(`Fetching stats for ${USER}...`);
   const raw = await fetchStats();
+  const languages = await fetchLanguages();
   const streaks = computeStreaks(raw.days);
   const firstYear = raw.createdAt.getUTCFullYear();
 
@@ -272,18 +423,24 @@ async function main() {
   const stats = {
     totalContributions: raw.totalContributions,
     totalCommits: raw.totalCommits,
+    totalReviews: raw.totalReviews,
     stars: raw.stars,
     followers: raw.followers,
+    totalPRs: raw.totalPRs,
     mergedPRs: raw.mergedPRs,
+    issues: raw.issues,
     repos: raw.repos,
     streaks,
   };
 
   console.log('Streak:', streaks);
-  console.log('Totals:', { commits: stats.totalCommits, contribs: stats.totalContributions, stars: stats.stars, followers: stats.followers, prs: stats.mergedPRs, repos: stats.repos });
+  console.log('Totals:', { commits: stats.totalCommits, contribs: stats.totalContributions, stars: stats.stars, followers: stats.followers, prs: stats.totalPRs, merged: stats.mergedPRs, reviews: stats.totalReviews, issues: stats.issues, repos: stats.repos });
   console.log('Activity:', { activeDays, totalDays, bestDay });
+  console.log('Languages:', languages.langs.map(l => `${l.name}:${l.pct.toFixed(1)}%`).join(', '));
 
   await fs.mkdir(OUT_DIR, { recursive: true });
+  await fs.writeFile(path.join(OUT_DIR, 'stats.svg'), statsSVG(stats));
+  await fs.writeFile(path.join(OUT_DIR, 'languages.svg'), languagesSVG(languages));
   await fs.writeFile(path.join(OUT_DIR, 'streak.svg'), streakSVG({
     totalContributions: raw.totalContributions,
     streaks,
@@ -293,7 +450,7 @@ async function main() {
     bestDay,
   }));
   await fs.writeFile(path.join(OUT_DIR, 'trophies.svg'), trophiesSVG(stats));
-  console.log('Wrote assets/streak.svg and assets/trophies.svg');
+  console.log('Wrote stats.svg, languages.svg, streak.svg, trophies.svg');
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

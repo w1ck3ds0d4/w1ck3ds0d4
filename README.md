@@ -183,9 +183,9 @@ Leaning toward an on-device security/ML angle that plays to AMD hardware strengt
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=w1ck3ds0d4&show_icons=true&count_private=true&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage&card_width=968&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&icon_color=64ffda&text_color=ccd6f6&cachebust=20260418d" alt="stats" />
+<img src="assets/stats.svg" alt="stats" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=w1ck3ds0d4&layout=donut&card_width=968&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&text_color=ccd6f6&langs_count=10&cachebust=20260418d" alt="top-langs" />
+<img src="assets/languages.svg" alt="languages" />
 
 <img src="assets/streak.svg" alt="streak" />
 
