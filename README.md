@@ -14,10 +14,10 @@ Full-stack developer building cross-platform apps, games, and security tooling.
 
 ## What I work on
 
-- **Desktop apps** - Tauri (Rust + React/Svelte), .NET/Blazor
-- **Security & privacy tooling** - MITM filter proxies, log correlation engines, AI evaluation environments
+- **Desktop & mobile apps** - Tauri (Rust + React/Svelte), Flutter, Electron, .NET/Blazor
+- **Intelligence & security tooling** - real-time data aggregation, MITM filter proxies, log correlation, AI evaluation environments
+- **Games** - 2D co-op roguelike, Tauri overlays, custom networking
 - **Web backends** - Fastify, GraphQL, PostgreSQL, SQLite, .NET Aspire
-- **Games** - Tauri overlays for multiplayer titles
 
 ## Stack
 
@@ -25,6 +25,7 @@ Full-stack developer building cross-platform apps, games, and security tooling.
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
   <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white" />
   <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
@@ -32,7 +33,9 @@ Full-stack developer building cross-platform apps, games, and security tooling.
 <p>
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
   <img src="https://img.shields.io/badge/Tauri-FFC131?style=for-the-badge&logo=tauri&logoColor=black" />
+  <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" />
   <img src="https://img.shields.io/badge/Blazor-512BD4?style=for-the-badge&logo=blazor&logoColor=white" />
 </p>
 <p>
@@ -43,6 +46,8 @@ Full-stack developer building cross-platform apps, games, and security tooling.
   <img src="https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white" />
 </p>
 <p>
+  <img src="https://img.shields.io/badge/CesiumJS-6CADDF?style=for-the-badge&logo=cesium&logoColor=white" />
+  <img src="https://img.shields.io/badge/PixiJS-E91E63?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/.NET%20Aspire-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
@@ -120,9 +125,9 @@ Lightweight Tauri overlay for RuneScape 3 with daily tracker and Grand Exchange 
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=w1ck3ds0d4&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&icon_color=64ffda&text_color=ccd6f6&hide=issues" alt="stats" height="170" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=w1ck3ds0d4&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&text_color=ccd6f6&langs_count=8" alt="top-langs" height="170" />
+<img src="https://github-readme-stats.vercel.app/api?username=w1ck3ds0d4&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&icon_color=64ffda&text_color=ccd6f6&hide=issues&cachebust=20260418" alt="stats" height="170" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=w1ck3ds0d4&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=64ffda&text_color=ccd6f6&langs_count=8&cachebust=20260418" alt="top-langs" height="170" />
 
-<img src="https://streak-stats.demolab.com/?user=w1ck3ds0d4&theme=tokyonight&hide_border=true&background=0a192f&stroke=64ffda&ring=64ffda&fire=64ffda&currStreakLabel=64ffda&sideLabels=ccd6f6&currStreakNum=ccd6f6&sideNums=ccd6f6&dates=8892b0&date_format=M+j%5B%2C+Y%5D&v=2" alt="streak" height="170" />
+<img src="https://streak-stats.demolab.com/?user=w1ck3ds0d4&theme=tokyonight&hide_border=true&background=0a192f&stroke=64ffda&ring=64ffda&fire=64ffda&currStreakLabel=64ffda&sideLabels=ccd6f6&currStreakNum=ccd6f6&sideNums=ccd6f6&dates=8892b0&date_format=M+j%5B%2C+Y%5D&v=20260418" alt="streak" height="170" />
 
 </div>
