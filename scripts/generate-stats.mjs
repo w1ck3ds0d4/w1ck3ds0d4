@@ -177,6 +177,56 @@ function formatShort(iso) {
   return `${m[d.getUTCMonth()]} ${d.getUTCDate()}`;
 }
 
+function bannerSVG() {
+  const w = 968, h = 180;
+  const charW = 18;
+  const charH = 18;
+  const cols = Math.floor(w / charW);
+  const charsPerCol = 14;
+  const totalColH = charsPerCol * charH;
+
+  const pool = 'ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789';
+  const rand = () => pool[Math.floor(Math.random() * pool.length)];
+
+  const columns = [];
+  for (let c = 0; c < cols; c++) {
+    const x = c * charW + 9;
+    const dur = (3 + Math.random() * 4).toFixed(2);
+    const delay = (-Math.random() * Number(dur)).toFixed(2);
+    const tspans = [];
+    for (let i = 0; i < charsPerCol; i++) {
+      const isHead = i === charsPerCol - 1;
+      const opacity = isHead ? '1' : ((i + 1) / charsPerCol * 0.85).toFixed(2);
+      const fill = isHead ? '#ffffff' : '#64ffda';
+      tspans.push(`<tspan x="${x}" y="${(i + 1) * charH}" fill="${fill}" fill-opacity="${opacity}">${rand()}</tspan>`);
+    }
+    columns.push(`<g>
+      <text class="rain">${tspans.join('')}</text>
+      <animateTransform attributeName="transform" type="translate" from="0 ${-totalColH}" to="0 ${h + totalColH}" dur="${dur}s" begin="${delay}s" repeatCount="indefinite"/>
+    </g>`);
+  }
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="w1ck3ds0d4">
+  <style>
+    .rain { font-family: 'Fira Code', 'Courier New', monospace; font-size: 15px; font-weight: 600; }
+    .title { font-family: 'Segoe UI', Helvetica, sans-serif; font-weight: 800; font-size: 64px; fill: #64ffda; letter-spacing: 2px; }
+  </style>
+  <defs>
+    <clipPath id="banner-clip"><rect width="${w}" height="${h}" rx="8"/></clipPath>
+    <linearGradient id="banner-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#112240"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#banner-clip)">
+    <rect width="${w}" height="${h}" fill="url(#banner-bg)"/>
+    ${columns.join('')}
+    <rect width="${w}" height="${h}" fill="#0a192f" fill-opacity="0.4"/>
+    <text x="${w / 2}" y="${h / 2 + 22}" text-anchor="middle" class="title" stroke="#0a192f" stroke-width="3" paint-order="stroke fill">w1ck3ds0d4</text>
+  </g>
+</svg>`;
+}
+
 function statsSVG(stats) {
   const w = 968, h = 210;
   const pad = 30;
@@ -442,6 +492,7 @@ async function main() {
   console.log('Languages:', languages.langs.map(l => `${l.name}:${l.pct.toFixed(1)}%`).join(', '));
 
   await fs.mkdir(OUT_DIR, { recursive: true });
+  await fs.writeFile(path.join(OUT_DIR, 'banner.svg'), bannerSVG());
   await fs.writeFile(path.join(OUT_DIR, 'stats.svg'), statsSVG(stats));
   await fs.writeFile(path.join(OUT_DIR, 'languages.svg'), languagesSVG(languages));
   await fs.writeFile(path.join(OUT_DIR, 'streak.svg'), streakSVG({

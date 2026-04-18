@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a192f,100:1e3a8a&height=180&section=header&text=w1ck3ds0d4&fontSize=60&fontColor=64ffda&animation=fadeIn&fontAlignY=38&desc=&descAlignY=70" width="100%" alt="banner" />
+<img src="assets/banner.svg?v=20260419a" alt="banner" />
 
 <a href="https://github.com/w1ck3ds0d4">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+full-stack+developer;%3E+intelligence+%26+security+tooling;%3E+AI+evaluation+%26+agents;%3E+shipping+daily+from+Malta" alt="typing" />
