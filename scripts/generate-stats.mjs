@@ -48,6 +48,9 @@ async function fetchStats() {
         nodes { stargazerCount }
       }
     }
+    issuesFixed: search(query: "author:${USER} is:pr is:merged linked:issue", type: ISSUE) {
+      issueCount
+    }
   }`);
 
   const u = meta.user;
@@ -56,6 +59,7 @@ async function fetchStats() {
   const totalPRs = u.allPRs.totalCount;
   const mergedPRs = u.mergedPRs.totalCount;
   const issues = u.issues.totalCount;
+  const issuesFixed = meta.issuesFixed.issueCount;
   const repos = u.repositories.totalCount;
 
   const createdAt = new Date(u.createdAt);
@@ -100,7 +104,7 @@ async function fetchStats() {
     .map(([date, count]) => ({ date, count }))
     .sort((a, b) => a.date.localeCompare(b.date));
 
-  return { days, totalContributions, totalCommits, totalReviews, stars, followers, totalPRs, mergedPRs, issues, repos, createdAt };
+  return { days, totalContributions, totalCommits, totalReviews, stars, followers, totalPRs, mergedPRs, issues, issuesFixed, repos, createdAt };
 }
 
 async function fetchLanguages() {
@@ -264,7 +268,7 @@ function statsSVG(stats) {
   ];
   const right = [
     { label: 'Merge Rate',          value: mergeRate + '%' },
-    { label: 'Total Reviews',       value: stats.totalReviews },
+    { label: 'Issues Fixed',        value: stats.issuesFixed },
     { label: 'Followers',           value: stats.followers },
     { label: 'Repositories',        value: stats.repos },
   ];
@@ -504,12 +508,13 @@ async function main() {
     totalPRs: raw.totalPRs,
     mergedPRs: raw.mergedPRs,
     issues: raw.issues,
+    issuesFixed: raw.issuesFixed,
     repos: raw.repos,
     streaks,
   };
 
   console.log('Streak:', streaks);
-  console.log('Totals:', { commits: stats.totalCommits, contribs: stats.totalContributions, stars: stats.stars, followers: stats.followers, prs: stats.totalPRs, merged: stats.mergedPRs, reviews: stats.totalReviews, issues: stats.issues, repos: stats.repos });
+  console.log('Totals:', { commits: stats.totalCommits, contribs: stats.totalContributions, stars: stats.stars, followers: stats.followers, prs: stats.totalPRs, merged: stats.mergedPRs, reviews: stats.totalReviews, issues: stats.issues, issuesFixed: stats.issuesFixed, repos: stats.repos });
   console.log('Activity:', { activeDays, totalDays, bestDay });
   console.log('Languages:', languages.langs.map(l => `${l.name}:${l.pct.toFixed(1)}%`).join(', '));
 
