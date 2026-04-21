@@ -15,7 +15,7 @@
   <line x1="774.4" y1="35" x2="774.4" y2="135" class="divider"/>
 
   <g transform="translate(96.8,0)">
-    <text x="0" y="72" class="value" text-anchor="middle">3,196</text>
+    <text x="0" y="72" class="value" text-anchor="middle">3,224</text>
     <text x="0" y="98" class="label" text-anchor="middle">Total Contributions</text>
     <text x="0" y="130" class="range" text-anchor="middle">2019 - Present</text>
   </g>
@@ -26,21 +26,21 @@
     <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"
           fill="#0a192f" stroke="#64ffda" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
   </g>
-    <text x="0" y="87" class="value-accent" text-anchor="middle">96</text>
+    <text x="0" y="87" class="value-accent" text-anchor="middle">97</text>
     <text x="0" y="132" class="label-accent" text-anchor="middle">Current Streak</text>
-    <text x="0" y="150" class="range" text-anchor="middle">Jan 15 - Apr 20</text>
+    <text x="0" y="150" class="range" text-anchor="middle">Jan 15 - Apr 21</text>
   </g>
 
   <g transform="translate(484,0)">
-    <text x="0" y="72" class="value" text-anchor="middle">96</text>
+    <text x="0" y="72" class="value" text-anchor="middle">97</text>
     <text x="0" y="98" class="label" text-anchor="middle">Longest Streak</text>
-    <text x="0" y="130" class="range" text-anchor="middle">Jan 15 - Apr 20</text>
+    <text x="0" y="130" class="range" text-anchor="middle">Jan 15 - Apr 21</text>
   </g>
 
   <g transform="translate(677.5999999999999,0)">
-    <text x="0" y="72" class="value" text-anchor="middle">193</text>
+    <text x="0" y="72" class="value" text-anchor="middle">194</text>
     <text x="0" y="98" class="label" text-anchor="middle">Active Days</text>
-    <text x="0" y="130" class="range" text-anchor="middle">8% of 2,345 days</text>
+    <text x="0" y="130" class="range" text-anchor="middle">8% of 2,346 days</text>
   </g>
 
   <g transform="translate(871.1999999999999,0)">
