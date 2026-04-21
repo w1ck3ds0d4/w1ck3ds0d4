@@ -152,20 +152,6 @@ Leaning toward an on-device security/ML angle that plays to AMD hardware strengt
 
 </td>
 </tr>
-<tr>
-<td width="50%" valign="top">
-
-<div align="center">
-<br><br>
-<strong><em>More hackathons coming soon...</em></strong>
-<br>
-<sub>Always scouting for the next one.</sub>
-</div>
-
-</td>
-<td width="50%" valign="top">
-</td>
-</tr>
 </table>
 
 ---
