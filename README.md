@@ -131,17 +131,6 @@ Lightweight Tauri overlay for RuneScape 3 with daily tracker and Grand Exchange 
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://cerebralvalley.ai/e/built-with-4-7-hackathon"><strong>Built with Opus 4.7</strong></a>
-<br>
-<sub>Cerebral Valley × Anthropic · April 2026 · <em>Applied</em></sub>
-
-Building **Nemassist** - an adversarial subagent that roleplays as a black hat on every PR. Reads the diff with 1M-context awareness, spawns specialized attacker subagents in parallel, and opens a Ghost PR with working exploits committed as failing tests.
-
-`Claude Code` `subagents` `security`
-
-</td>
-<td width="50%" valign="top">
-
 <a href="https://www.hackster.io/contests/invent-the-future-with-arduino-uno-q-and-app-lab"><strong>Invent the Future with Arduino UNO Q</strong></a>
 <br>
 <sub>Hackster.io × Arduino · 2026 · <em>Planning</em></sub>
@@ -151,8 +140,6 @@ Planning **KaliCare** - a robotic companion cat that passively screens for early
 `Arduino` `Edge Impulse` `robotics` `health-tech`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 <a href="https://lablab.ai/ai-hackathons/amd-developer"><strong>AMD Developer Challenge</strong></a>
@@ -164,6 +151,8 @@ Leaning toward an on-device security/ML angle that plays to AMD hardware strengt
 `AMD` `AI`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 <div align="center">
@@ -173,6 +162,8 @@ Leaning toward an on-device security/ML angle that plays to AMD hardware strengt
 <sub>Always scouting for the next one.</sub>
 </div>
 
+</td>
+<td width="50%" valign="top">
 </td>
 </tr>
 </table>
