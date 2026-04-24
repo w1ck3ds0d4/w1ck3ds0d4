@@ -66,9 +66,9 @@
 
 <a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
 
-Privacy-first browser shell with an embedded MITM filter proxy. Strips trackers and analytics at the network layer. Desktop via Tauri + hudsucker, Android via WebView's native `shouldInterceptRequest`.
+Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
 
-`Tauri` `Rust` `React` `hudsucker`
+`Tauri` `Rust` `React` `hudsucker` `arti`
 
 </td>
 <td width="50%" valign="top">
