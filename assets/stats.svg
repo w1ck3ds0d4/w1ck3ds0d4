@@ -11,17 +11,17 @@
     <text x="30" y="70" class="label">Total Stars Earned</text>
     <text x="454" y="70" class="value" text-anchor="end">1</text>
     <text x="514" y="70" class="label">Merge Rate</text>
-    <text x="938" y="70" class="value" text-anchor="end">95%</text>
+    <text x="938" y="70" class="value" text-anchor="end">89%</text>
     <text x="30" y="102" class="label">Total Commits</text>
-    <text x="454" y="102" class="value" text-anchor="end">530</text>
+    <text x="454" y="102" class="value" text-anchor="end">489</text>
     <text x="514" y="102" class="label">Issues Fixed</text>
     <text x="938" y="102" class="value" text-anchor="end">0</text>
     <text x="30" y="134" class="label">Total PRs</text>
-    <text x="454" y="134" class="value" text-anchor="end">97</text>
+    <text x="454" y="134" class="value" text-anchor="end">18</text>
     <text x="514" y="134" class="label">Followers</text>
     <text x="938" y="134" class="value" text-anchor="end">2</text>
     <text x="30" y="166" class="label">Total PRs Merged</text>
-    <text x="454" y="166" class="value" text-anchor="end">92</text>
+    <text x="454" y="166" class="value" text-anchor="end">16</text>
     <text x="514" y="166" class="label">Repositories</text>
     <text x="938" y="166" class="value" text-anchor="end">9</text>
 </svg>
