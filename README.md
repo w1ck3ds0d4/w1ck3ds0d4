@@ -64,6 +64,15 @@
 <tr>
 <td width="50%" valign="top">
 
+<a href="https://github.com/w1ck3ds0d4/MimicMe"><strong>MimicMe</strong></a>
+
+Human-like input automation for Windows. Paste text, focus a field, hit a hotkey — types it with realistic cadence: WPM jitter, typo-with-correction, punctuation pauses, hesitation. Three input backends (SendInput, WM_CHAR, Interception). Foundation for a full RPA tool: record/replay, OCR, image-match, file ops, loops.
+
+`Tauri` `Rust` `React` `enigo` `windows-rs`
+
+</td>
+<td width="50%" valign="top">
+
 <a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
 
 Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
@@ -71,6 +80,8 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 `Tauri` `Rust` `React` `hudsucker` `arti`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/ThreatLens"><strong>ThreatLens</strong></a>
@@ -80,8 +91,6 @@ Log aggregation and correlation engine built on .NET Aspire - Postgres, Redis, E
 `.NET` `Aspire` `EF Core` `Blazor`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
@@ -91,6 +100,8 @@ Multi-tenant document management API for AI cybersecurity evaluation and trainin
 `GraphQL` `Apollo` `SQLite` `React`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/GlassVault.tools"><strong>GlassVault.tools</strong></a>
@@ -100,8 +111,6 @@ Companion Python tooling for GlassVault: traffic generation, exploit payloads, l
 `Python` `pentest` `AI evaluation`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/DarkVeil"><strong>DarkVeil</strong></a>
@@ -111,6 +120,8 @@ Universal dark-mode browser extension that works on any page, any browser. MV3-c
 `MV3` `JavaScript` `cross-browser`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/RS3-Companion"><strong>RS3-Companion</strong></a>
@@ -118,6 +129,9 @@ Universal dark-mode browser extension that works on any page, any browser. MV3-c
 Lightweight Tauri overlay for RuneScape 3 with daily tracker and Grand Exchange flip calculator.
 
 `Tauri` `Svelte` `Rust`
+
+</td>
+<td width="50%" valign="top">
 
 </td>
 </tr>
