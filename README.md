@@ -104,15 +104,6 @@ Multi-tenant document management API for AI cybersecurity evaluation and trainin
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/GlassVault.tools"><strong>GlassVault.tools</strong></a>
-
-Companion Python tooling for GlassVault: traffic generation, exploit payloads, log tampering, scenario orchestration, AI model scoring against ground-truth manifests.
-
-`Python` `pentest` `AI evaluation`
-
-</td>
-<td width="50%" valign="top">
-
 <a href="https://github.com/w1ck3ds0d4/DarkVeil"><strong>DarkVeil</strong></a>
 
 Universal dark-mode browser extension that works on any page, any browser. MV3-compatible, cross-browser build.
@@ -120,8 +111,6 @@ Universal dark-mode browser extension that works on any page, any browser. MV3-c
 `MV3` `JavaScript` `cross-browser`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/RS3-Companion"><strong>RS3-Companion</strong></a>
@@ -129,9 +118,6 @@ Universal dark-mode browser extension that works on any page, any browser. MV3-c
 Lightweight Tauri overlay for RuneScape 3 with daily tracker and Grand Exchange flip calculator.
 
 `Tauri` `Svelte` `Rust`
-
-</td>
-<td width="50%" valign="top">
 
 </td>
 </tr>
