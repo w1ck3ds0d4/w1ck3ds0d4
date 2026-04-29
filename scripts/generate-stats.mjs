@@ -4,6 +4,8 @@ import path from 'node:path';
 const TOKEN = process.env.GH_PAT;
 const USER = process.env.GH_USER || 'w1ck3ds0d4';
 const OUT_DIR = path.resolve('assets');
+const VERSION = process.env.ASSET_VERSION || '';
+const assetName = (name) => VERSION ? `${name}.${VERSION}.svg` : `${name}.svg`;
 
 const THEME = {
   bg: '#0a192f',
@@ -519,10 +521,17 @@ async function main() {
   console.log('Languages:', languages.langs.map(l => `${l.name}:${l.pct.toFixed(1)}%`).join(', '));
 
   await fs.mkdir(OUT_DIR, { recursive: true });
-  await fs.writeFile(path.join(OUT_DIR, 'banner.svg'), bannerSVG());
-  await fs.writeFile(path.join(OUT_DIR, 'stats.svg'), statsSVG(stats));
-  await fs.writeFile(path.join(OUT_DIR, 'languages.svg'), languagesSVG(languages));
-  await fs.writeFile(path.join(OUT_DIR, 'streak.svg'), streakSVG({
+  const written = {
+    banner: assetName('banner'),
+    stats: assetName('stats'),
+    languages: assetName('languages'),
+    streak: assetName('streak'),
+    trophies: assetName('trophies'),
+  };
+  await fs.writeFile(path.join(OUT_DIR, written.banner), bannerSVG());
+  await fs.writeFile(path.join(OUT_DIR, written.stats), statsSVG(stats));
+  await fs.writeFile(path.join(OUT_DIR, written.languages), languagesSVG(languages));
+  await fs.writeFile(path.join(OUT_DIR, written.streak), streakSVG({
     totalContributions: raw.totalContributions,
     streaks,
     firstYear,
@@ -530,8 +539,8 @@ async function main() {
     totalDays,
     bestDay,
   }));
-  await fs.writeFile(path.join(OUT_DIR, 'trophies.svg'), trophiesSVG(stats));
-  console.log('Wrote stats.svg, languages.svg, streak.svg, trophies.svg');
+  await fs.writeFile(path.join(OUT_DIR, written.trophies), trophiesSVG(stats));
+  console.log('Wrote', Object.values(written).join(', '));
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
