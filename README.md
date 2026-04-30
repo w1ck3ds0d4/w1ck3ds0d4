@@ -125,37 +125,6 @@ Lightweight Tauri overlay for RuneScape 3 with daily tracker and Grand Exchange 
 
 ---
 
-## Hackathons
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://www.hackster.io/contests/invent-the-future-with-arduino-uno-q-and-app-lab"><strong>Invent the Future with Arduino UNO Q</strong></a>
-<br>
-<sub>Hackster.io × Arduino · 2026 · <em>Planning</em></sub>
-
-Planning **KaliCare** - a robotic companion cat that passively screens for early health anomalies while providing genuine companionship. Dual-brain QRB2210 Linux + STM32 MCU; Edge Impulse models for facial cues, cough classification, and voice tremor.
-
-`Arduino` `Edge Impulse` `robotics` `health-tech`
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://lablab.ai/ai-hackathons/amd-developer"><strong>AMD Developer Challenge</strong></a>
-<br>
-<sub>lablab.ai × AMD · 2026 · <em>Brainstorming</em></sub>
-
-Leaning toward an on-device security/ML angle that plays to AMD hardware strengths. Project TBD.
-
-`AMD` `AI`
-
-</td>
-</tr>
-</table>
-
----
-
 ## Statistics
 
 <div align="center">
