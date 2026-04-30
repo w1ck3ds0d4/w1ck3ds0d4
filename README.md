@@ -66,7 +66,7 @@
 
 <a href="https://github.com/w1ck3ds0d4/MimicMe"><strong>MimicMe</strong></a>
 
-Human-like input automation for Windows. Paste text, focus a field, hit a hotkey — types it with realistic cadence: WPM jitter, typo-with-correction, punctuation pauses, hesitation. Three input backends (SendInput, WM_CHAR, Interception). Foundation for a full RPA tool: record/replay, OCR, image-match, file ops, loops.
+Human-like input automation for Windows. Hit a hotkey and MimicMe types with realistic cadence: WPM jitter, typo correction, punctuation pauses, hesitation. Three input backends (SendInput, WM_CHAR, Interception). Foundation for record/replay, OCR, image-match, file ops, loops.
 
 `Tauri` `Rust` `React` `enigo` `windows-rs`
 
