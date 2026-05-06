@@ -20,7 +20,6 @@
 
 - **Desktop & mobile apps** - Tauri (Rust + React/Svelte), Flutter, Electron, .NET/Blazor
 - **Intelligence & security tooling** - real-time data aggregation, MITM filter proxies, log correlation, AI evaluation environments
-- **Games** - 2D co-op roguelike, Tauri overlays, custom networking
 - **Web backends** - Fastify, GraphQL, PostgreSQL, SQLite, .NET Aspire
 
 ## Stack
