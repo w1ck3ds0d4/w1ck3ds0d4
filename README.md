@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.202605150048.svg" alt="banner" />
+<img src="assets/banner.202605160045.svg" alt="banner" />
 
 <a href="https://github.com/w1ck3ds0d4">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Software+Engineer;%3E+Cybersecurity+Specialist;%3E+AI+Researcher;%3E+Cloud+Architect" alt="typing" />
@@ -128,12 +128,12 @@ Lightweight Tauri overlay for RuneScape 3 with daily tracker and Grand Exchange 
 
 <div align="center">
 
-<img src="assets/stats.202605150048.svg" alt="stats" />
+<img src="assets/stats.202605160045.svg" alt="stats" />
 
-<img src="assets/languages.202605150048.svg" alt="languages" />
+<img src="assets/languages.202605160045.svg" alt="languages" />
 
-<img src="assets/streak.202605150048.svg" alt="streak" />
+<img src="assets/streak.202605160045.svg" alt="streak" />
 
-<img src="assets/trophies.202605150048.svg" alt="trophies" />
+<img src="assets/trophies.202605160045.svg" alt="trophies" />
 
 </div>
