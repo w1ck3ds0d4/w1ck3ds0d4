@@ -179,6 +179,11 @@ function computeStreaks(days) {
 }
 
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function escapeXml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]
+  ));
+}
 function formatShort(iso) {
   if (!iso) return '-';
   const d = new Date(iso + 'T00:00:00Z');
@@ -354,7 +359,7 @@ function languagesSVG({ langs }) {
     const pctX = x + legendColW;
     return `
     <rect x="${x}" y="${y - 11}" width="12" height="12" rx="3" fill="${l.color}"/>
-    <text x="${x + 22}" y="${y}" class="lang-name">${l.name}</text>
+    <text x="${x + 22}" y="${y}" class="lang-name">${escapeXml(l.name)}</text>
     <text x="${pctX}" y="${y}" class="lang-pct" text-anchor="end">${l.pct.toFixed(2)}%</text>`;
   }).join('');
 
