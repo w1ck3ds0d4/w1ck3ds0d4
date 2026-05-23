@@ -63,15 +63,6 @@
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/MimicMe"><strong>MimicMe</strong></a>
-
-Human-like input automation for Windows. Hit a hotkey and MimicMe types with realistic cadence: WPM jitter, typo correction, punctuation pauses, hesitation. Three input backends (SendInput, WM_CHAR, Interception). Foundation for record/replay, OCR, image-match, file ops, loops.
-
-`Tauri` `Rust` `React` `enigo` `windows-rs`
-
-</td>
-<td width="50%" valign="top">
-
 <a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
 
 Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
@@ -79,8 +70,26 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 `Tauri` `Rust` `React` `hudsucker` `arti`
 
 </td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/MimicMe"><strong>MimicMe</strong></a>
+
+Human-like input automation for Windows. Hit a hotkey and MimicMe types with realistic cadence: WPM jitter, typo correction, punctuation pauses, hesitation. Three input backends (SendInput, WM_CHAR, Interception). Foundation for record/replay, OCR, image-match, file ops, loops.
+
+`Tauri` `Rust` `React` `enigo` `windows-rs`
+
+</td>
 </tr>
 <tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/NanoFarm"><strong>NanoFarm</strong></a>
+
+SimCity-style idle game that lives in a VS Code tab. Real production chain (mill -> workshop -> factory -> market), residents with food / water / power / goods / job needs, a 7-node tech tree, and prestige across eight cities. Claude Code hook converts your tool calls into in-game materials.
+
+`Vite` `React` `PixiJS` `VS Code` `Claude Code`
+
+</td>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/ThreatLens"><strong>ThreatLens</strong></a>
@@ -90,6 +99,8 @@ Log aggregation and correlation engine built on .NET Aspire - Postgres, Redis, E
 `.NET` `Aspire` `EF Core` `Blazor`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
@@ -99,24 +110,13 @@ Multi-tenant document management API for AI cybersecurity evaluation and trainin
 `GraphQL` `Apollo` `SQLite` `React`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/DarkVeil"><strong>DarkVeil</strong></a>
+<a href="https://github.com/w1ck3ds0d4/EuroFlow"><strong>EuroFlow</strong></a>
 
-Universal dark-mode browser extension that works on any page, any browser. MV3-compatible, cross-browser build.
+Local-first personal finance app for the euro zone (SEPA, IBAN, multi-currency ledger with stored FX rates). Import bank CSVs, categorize spending, set per-category budgets, see monthly reports - all on-disk, never to a cloud. Planned: Tauri 2 desktop shell + Fastify sidecar + SQLite.
 
-`MV3` `JavaScript` `cross-browser`
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/RS3-Companion"><strong>RS3-Companion</strong></a>
-
-Lightweight Tauri overlay for RuneScape 3 with daily tracker and Grand Exchange flip calculator.
-
-`Tauri` `Svelte` `Rust`
+`Tauri` `Rust` `React` `Fastify` `SQLite`
 
 </td>
 </tr>
