@@ -63,6 +63,15 @@
 <tr>
 <td width="50%" valign="top">
 
+<a href="https://github.com/w1ck3ds0d4/VeilBreak"><strong>VeilBreak</strong></a>
+
+Global situational awareness dashboard - 46 live data providers (alerts, flights, vessels, conflicts, cyber threats, financial markets, health, deep research, news) aggregated onto a CesiumJS 3D globe. Conflict layer with tier-aware country highlighting, full health intelligence suite, hardware builder.
+
+`Tauri` `Rust` `React` `CesiumJS` `Fastify`
+
+</td>
+<td width="50%" valign="top">
+
 <a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
 
 Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
@@ -70,17 +79,17 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 `Tauri` `Rust` `React` `hudsucker` `arti`
 
 </td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/MimicMe"><strong>MimicMe</strong></a>
-
-Human-like input automation for Windows. Hit a hotkey and MimicMe types with realistic cadence: WPM jitter, typo correction, punctuation pauses, hesitation. Three input backends (SendInput, WM_CHAR, Interception). Foundation for record/replay, OCR, image-match, file ops, loops.
-
-`Tauri` `Rust` `React` `enigo` `windows-rs`
-
-</td>
 </tr>
 <tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a>
+
+2D top-down co-op roguelike with base building, procedural world, and up to 4 players. Server-authoritative networking, 3 classes with 3 active subclasses each, embedded server for offline solo play, hosted EC2 deploy for online sessions.
+
+`Electron` `PixiJS` `TypeScript` `WebSocket` `Node.js`
+
+</td>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/NanoFarm"><strong>NanoFarm</strong></a>
@@ -90,17 +99,17 @@ SimCity-style idle game that lives in a VS Code tab. Real production chain (mill
 `Vite` `React` `PixiJS` `VS Code` `Claude Code`
 
 </td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/ThreatLens"><strong>ThreatLens</strong></a>
-
-Log aggregation and correlation engine built on .NET Aspire - Postgres, Redis, EF Core, Blazor. Ingest API, background correlator with regex rules, distributed observability via OpenTelemetry.
-
-`.NET` `Aspire` `EF Core` `Blazor`
-
-</td>
 </tr>
 <tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/MimicMe"><strong>MimicMe</strong></a>
+
+Human-like input automation for Windows. Hit a hotkey and MimicMe types with realistic cadence: WPM jitter, typo correction, punctuation pauses, hesitation. Three input backends (SendInput, WM_CHAR, Interception). Foundation for record/replay, OCR, image-match, file ops, loops.
+
+`Tauri` `Rust` `React` `enigo` `windows-rs`
+
+</td>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
@@ -108,15 +117,6 @@ Log aggregation and correlation engine built on .NET Aspire - Postgres, Redis, E
 Multi-tenant document management API for AI cybersecurity evaluation and training. GraphQL + Apollo backend, React admin UI.
 
 `GraphQL` `Apollo` `SQLite` `React`
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/EuroFlow"><strong>EuroFlow</strong></a>
-
-Local-first personal finance app for the euro zone (SEPA, IBAN, multi-currency ledger with stored FX rates). Import bank CSVs, categorize spending, set per-category budgets, see monthly reports - all on-disk, never to a cloud. Planned: Tauri 2 desktop shell + Fastify sidecar + SQLite.
-
-`Tauri` `Rust` `React` `Fastify` `SQLite`
 
 </td>
 </tr>
