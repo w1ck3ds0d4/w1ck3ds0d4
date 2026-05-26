@@ -137,3 +137,10 @@ Multi-tenant document management API for AI cybersecurity evaluation and trainin
 <img src="assets/trophies.202605250054.svg" alt="trophies" />
 
 </div>
+
+## License
+
+This project is dual-licensed:
+
+AGPL v3 - free for open-source use. Derivatives and SaaS deployments must release their source under AGPL.
+Commercial license - for proprietary / closed-source use or hosted services that do not want to comply with AGPL source-disclosure requirements. Contact for terms.
