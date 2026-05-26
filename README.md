@@ -65,7 +65,7 @@
 
 <a href="https://github.com/w1ck3ds0d4/VeilBreak"><strong>VeilBreak</strong></a>
 
-Global situational awareness dashboard - 46 live data providers (alerts, flights, vessels, conflicts, cyber threats, financial markets, health, deep research, news) aggregated onto a CesiumJS 3D globe. Conflict layer with tier-aware country highlighting, full health intelligence suite, hardware builder.
+Desktop-first intelligence platform aggregating 46+ live providers (alerts, flights, vessels, military, cyber threats, financial markets, health) onto a CesiumJS 3D globe. Deep cyber suite (37 sub-tabs, 330+ CLI tools), STIX/TAXII export, case management, AUTOBOT trading engines, hardware builder.
 
 `Tauri` `Rust` `React` `CesiumJS` `Fastify`
 
@@ -85,7 +85,7 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 
 <a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a>
 
-2D top-down co-op roguelike with base building, procedural world, and up to 4 players. Server-authoritative networking, 3 classes with 3 active subclasses each, embedded server for offline solo play, hosted EC2 deploy for online sessions.
+2D top-down co-op roguelike (up to 4 players) with base building and a procedural world. 3 classes x 3 active subclasses (10-tier skill trees), 8 multi-phase bosses, 30 cards, 18 achievements. Embedded server for offline solo, hosted EC2 for online invite-code sessions, signed auto-updater.
 
 `Electron` `PixiJS` `TypeScript` `WebSocket` `Node.js`
 
@@ -94,7 +94,7 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 
 <a href="https://github.com/w1ck3ds0d4/NanoFarm"><strong>NanoFarm</strong></a>
 
-SimCity-style idle game that lives in a VS Code tab. Real production chain (mill -> workshop -> factory -> market), residents with food / water / power / goods / job needs, a 7-node tech tree, and prestige across eight cities. Claude Code hook converts your tool calls into in-game materials.
+Pixel-art isometric idle city builder shipping as both a Vite web app and a VS Code extension. 150x150 procgen biome map, farm + mine buildings with terrain bonuses, road connectivity via BFS, materials HUD. Claude Code hook drains tool calls from `~/.nanofarm/tokens.jsonl` into in-game resources.
 
 `Vite` `React` `PixiJS` `VS Code` `Claude Code`
 
@@ -105,7 +105,7 @@ SimCity-style idle game that lives in a VS Code tab. Real production chain (mill
 
 <a href="https://github.com/w1ck3ds0d4/MimicMe"><strong>MimicMe</strong></a>
 
-Human-like input automation for Windows. Hit a hotkey and MimicMe types with realistic cadence: WPM jitter, typo correction, punctuation pauses, hesitation. Three input backends (SendInput, WM_CHAR, Interception). Foundation for record/replay, OCR, image-match, file ops, loops.
+Human-like input automation for Windows. Realistic typing cadence (WPM jitter, typo correction, punctuation pauses, hesitation) via four stacked backends - SendInput, ScanCodeSendInput, WM_CHAR, and Interception kernel driver. Global hotkey, signed Ed25519 auto-updater, local MCP server for Claude Desktop.
 
 `Tauri` `Rust` `React` `enigo` `windows-rs`
 
@@ -114,9 +114,9 @@ Human-like input automation for Windows. Hit a hotkey and MimicMe types with rea
 
 <a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
 
-Multi-tenant document management API for AI cybersecurity evaluation and training. GraphQL + Apollo backend, React admin UI.
+Intentionally vulnerable multi-tenant document API used as evaluation infrastructure for AI cybersecurity (incident investigation, pen-testing, secure remediation, log forensics). 12 catalogued vulnerabilities, Express 5 + Apollo GraphQL, HMAC-SHA256 chained audit log, React admin UI.
 
-`GraphQL` `Apollo` `SQLite` `React`
+`Express` `GraphQL` `Apollo` `SQLite` `React`
 
 </td>
 </tr>
