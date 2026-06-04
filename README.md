@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.202606030105.svg" alt="banner" />
+<img src="assets/banner.202606040105.svg" alt="banner" />
 
 <a href="https://github.com/w1ck3ds0d4">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Software+Engineer;%3E+Cybersecurity+Specialist;%3E+AI+Researcher;%3E+Cloud+Architect" alt="typing" />
@@ -128,12 +128,12 @@ Intentionally vulnerable multi-tenant document API used as evaluation infrastruc
 
 <div align="center">
 
-<img src="assets/stats.202606030105.svg" alt="stats" />
+<img src="assets/stats.202606040105.svg" alt="stats" />
 
-<img src="assets/languages.202606030105.svg" alt="languages" />
+<img src="assets/languages.202606040105.svg" alt="languages" />
 
-<img src="assets/streak.202606030105.svg" alt="streak" />
+<img src="assets/streak.202606040105.svg" alt="streak" />
 
-<img src="assets/trophies.202606030105.svg" alt="trophies" />
+<img src="assets/trophies.202606040105.svg" alt="trophies" />
 
 </div>
