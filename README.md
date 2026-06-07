@@ -63,15 +63,6 @@
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/VeilBreak"><strong>VeilBreak</strong></a>
-
-Desktop-first intelligence platform aggregating 46+ live providers (alerts, flights, vessels, military, cyber threats, financial markets, health) onto a CesiumJS 3D globe. Deep cyber suite (37 sub-tabs, 330+ CLI tools), STIX/TAXII export, case management, AUTOBOT trading engines, hardware builder.
-
-`Tauri` `Rust` `React` `CesiumJS` `Fastify`
-
-</td>
-<td width="50%" valign="top">
-
 <a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
 
 Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
@@ -79,8 +70,6 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 `Tauri` `Rust` `React` `hudsucker` `arti`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a>
@@ -90,6 +79,8 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 `Electron` `PixiJS` `TypeScript` `WebSocket` `Node.js`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/NanoFarm"><strong>NanoFarm</strong></a>
@@ -99,8 +90,6 @@ Pixel-art isometric idle city builder shipping as both a Vite web app and a VS C
 `Vite` `React` `PixiJS` `VS Code` `Claude Code`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/MimicMe"><strong>MimicMe</strong></a>
@@ -110,6 +99,8 @@ Human-like input automation for Windows. Realistic typing cadence (WPM jitter, t
 `Tauri` `Rust` `React` `enigo` `windows-rs`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
@@ -117,6 +108,15 @@ Human-like input automation for Windows. Realistic typing cadence (WPM jitter, t
 Intentionally vulnerable multi-tenant document API used as evaluation infrastructure for AI cybersecurity (incident investigation, pen-testing, secure remediation, log forensics). 12 catalogued vulnerabilities, Express 5 + Apollo GraphQL, HMAC-SHA256 chained audit log, React admin UI.
 
 `Express` `GraphQL` `Apollo` `SQLite` `React`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/ThreatLens"><strong>ThreatLens</strong></a>
+
+Log aggregation and correlation engine built on .NET Aspire. Ingest API for single and batch events, a background correlator that runs regex rules against messages to tag matches and elevate severity, a paginated query plus 24h stats API, and a Blazor dashboard. One `dotnet run` orchestrates Postgres, Redis, pgAdmin, and every service, with OpenTelemetry traces, metrics, and logs throughout.
+
+`.NET Aspire` `C#` `Blazor` `PostgreSQL` `Redis`
 
 </td>
 </tr>
