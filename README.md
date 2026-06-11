@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.202606100058.svg" alt="banner" />
+<img src="assets/banner.202606110057.svg" alt="banner" />
 
 <a href="https://github.com/w1ck3ds0d4">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Software+Engineer;%3E+Cybersecurity+Specialist;%3E+AI+Researcher;%3E+Cloud+Architect" alt="typing" />
@@ -128,12 +128,12 @@ Log aggregation and correlation engine built on .NET Aspire. Ingest API for sing
 
 <div align="center">
 
-<img src="assets/stats.202606100058.svg" alt="stats" />
+<img src="assets/stats.202606110057.svg" alt="stats" />
 
-<img src="assets/languages.202606100058.svg" alt="languages" />
+<img src="assets/languages.202606110057.svg" alt="languages" />
 
-<img src="assets/streak.202606100058.svg" alt="streak" />
+<img src="assets/streak.202606110057.svg" alt="streak" />
 
-<img src="assets/trophies.202606100058.svg" alt="trophies" />
+<img src="assets/trophies.202606110057.svg" alt="trophies" />
 
 </div>
