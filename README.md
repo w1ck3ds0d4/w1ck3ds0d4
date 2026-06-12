@@ -3,7 +3,7 @@
 <img src="assets/banner.202606120101.svg" alt="banner" />
 
 <a href="https://github.com/w1ck3ds0d4">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Software+Engineer;%3E+Cybersecurity+Specialist;%3E+AI+Researcher;%3E+Cloud+Architect" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Software+Engineer;%3E+Platform+%26+DevSecOps;%3E+Security+%26+Compliance+Tooling;%3E+Desktop%2C+Web+%26+AI+Apps" alt="typing" />
 </a>
 
 <br>
@@ -18,9 +18,10 @@
 
 ## What I work on
 
+- **Security & compliance tooling** - CI security baselines, tamper-evident audit logging, SBOM/CVE evidence pipelines, AI evaluation environments
+- **Backend & platform engineering** - .NET (Aspire, Orleans), Kubernetes, observability with OpenTelemetry, load-tested microservices
 - **Desktop & mobile apps** - Tauri (Rust + React/Svelte), Flutter, Electron, .NET/Blazor
-- **Intelligence & security tooling** - real-time data aggregation, MITM filter proxies, log correlation, AI evaluation environments
-- **Web backends** - Fastify, GraphQL, PostgreSQL, SQLite, .NET Aspire
+- **Intelligence tooling** - real-time data aggregation, MITM filter proxies, log correlation
 
 ## Stack
 
@@ -54,6 +55,9 @@
   <img src="https://img.shields.io/badge/.NET%20Aspire-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
 </p>
 
@@ -63,51 +67,11 @@
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
+<a href="https://github.com/w1ck3ds0d4/GrainWallet"><strong>GrainWallet</strong></a>
 
-Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
+Per-player wallet microservice on Microsoft Orleans, with each revision committed side by side and compared under an NBomber load dashboard. v2 hardens v1 with a `FOR UPDATE SKIP LOCKED` outbox, real LRU idempotency, HTTP 503 back-pressure, and pre-grain validation. Engineering journal, tests, and load harness per version.
 
-`Tauri` `Rust` `React` `hudsucker` `arti`
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a>
-
-2D top-down co-op roguelike (up to 4 players) with base building and a procedural world. 3 classes x 3 active subclasses (10-tier skill trees), 8 multi-phase bosses, 30 cards, 18 achievements. Embedded server for offline solo, hosted EC2 for online invite-code sessions, signed auto-updater.
-
-`Electron` `PixiJS` `TypeScript` `WebSocket` `Node.js`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/NanoFarm"><strong>NanoFarm</strong></a>
-
-Pixel-art isometric idle city builder shipping as both a Vite web app and a VS Code extension. 150x150 procgen biome map, farm + mine buildings with terrain bonuses, road connectivity via BFS, materials HUD. Claude Code hook drains tool calls from `~/.nanofarm/tokens.jsonl` into in-game resources.
-
-`Vite` `React` `PixiJS` `VS Code` `Claude Code`
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/MimicMe"><strong>MimicMe</strong></a>
-
-Human-like input automation for Windows. Realistic typing cadence (WPM jitter, typo correction, punctuation pauses, hesitation) via four stacked backends - SendInput, ScanCodeSendInput, WM_CHAR, and Interception kernel driver. Global hotkey, signed Ed25519 auto-updater, local MCP server for Claude Desktop.
-
-`Tauri` `Rust` `React` `enigo` `windows-rs`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
-
-Intentionally vulnerable multi-tenant document API used as evaluation infrastructure for AI cybersecurity (incident investigation, pen-testing, secure remediation, log forensics). 12 catalogued vulnerabilities, Express 5 + Apollo GraphQL, HMAC-SHA256 chained audit log, React admin UI.
-
-`Express` `GraphQL` `Apollo` `SQLite` `React`
+`.NET` `Orleans` `PostgreSQL` `NBomber` `Microservices`
 
 </td>
 <td width="50%" valign="top">
@@ -120,7 +84,51 @@ Log aggregation and correlation engine built on .NET Aspire. Ingest API for sing
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/SecureCheck"><strong>SecureCheck</strong></a>
+
+Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgrep), dependency/container/license scanning (Trivy), per-language linters, complexity and duplication metrics - posted as one severity-coloured verdict per run, with an optional AI review step and Discord digest. Consumed as a single `workflow_call` across every repo here, and it scans itself.
+
+`GitHub Actions` `gitleaks` `Semgrep` `Trivy` `Node.js`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
+
+Intentionally vulnerable multi-tenant document API used as evaluation infrastructure for AI cybersecurity (incident investigation, pen-testing, secure remediation, log forensics). 12 catalogued vulnerabilities, Express 5 + Apollo GraphQL, HMAC-SHA256 chained audit log, React admin UI.
+
+`Express` `GraphQL` `Apollo` `SQLite` `React`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
+
+Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
+
+`Tauri` `Rust` `React` `hudsucker` `arti`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/NanoFarm"><strong>NanoFarm</strong></a>
+
+Pixel-art isometric idle city builder shipping as both a Vite web app and a VS Code extension. 150x150 procgen biome map, farm + mine buildings with terrain bonuses, road connectivity via BFS, materials HUD. Claude Code hook drains tool calls from `~/.nanofarm/tokens.jsonl` into in-game resources.
+
+`Vite` `React` `PixiJS` `VS Code` `Claude Code`
+
+</td>
+</tr>
 </table>
+
+<p>
+Also public: <a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a> - a 2D top-down co-op roguelike for up to 4 players (Electron + PixiJS): 3 classes with 10-tier skill trees, 8 multi-phase bosses, an embedded server for offline solo and hosted invite-code sessions online, signed auto-updater.
+</p>
 
 ---
 
