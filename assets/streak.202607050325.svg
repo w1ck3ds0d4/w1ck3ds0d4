@@ -15,7 +15,7 @@
   <line x1="774.4" y1="35" x2="774.4" y2="135" class="divider"/>
 
   <g transform="translate(96.8,0)">
-    <text x="0" y="72" class="value" text-anchor="middle">5,445</text>
+    <text x="0" y="72" class="value" text-anchor="middle">5,474</text>
     <text x="0" y="98" class="label" text-anchor="middle">Total Contributions</text>
     <text x="0" y="130" class="range" text-anchor="middle">2019 - Present</text>
   </g>
@@ -40,7 +40,7 @@
   <g transform="translate(677.5999999999999,0)">
     <text x="0" y="72" class="value" text-anchor="middle">267</text>
     <text x="0" y="98" class="label" text-anchor="middle">Active Days</text>
-    <text x="0" y="130" class="range" text-anchor="middle">11% of 2,420 days</text>
+    <text x="0" y="130" class="range" text-anchor="middle">11% of 2,421 days</text>
   </g>
 
   <g transform="translate(871.1999999999999,0)">
