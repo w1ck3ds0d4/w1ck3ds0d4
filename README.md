@@ -96,11 +96,11 @@ Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgr
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
+<a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a>
 
-Intentionally vulnerable multi-tenant document API used as evaluation infrastructure for AI cybersecurity (incident investigation, pen-testing, secure remediation, log forensics). 12 catalogued vulnerabilities, Express 5 + Apollo GraphQL, HMAC-SHA256 chained audit log, React admin UI.
+2D top-down co-op roguelike for up to 4 players. 3 classes with 10-tier skill trees and 8 multi-phase bosses. The same embedded server runs offline solo and hosts invite-code sessions online, so there is one code path rather than a single-player mode and a multiplayer one. Signed auto-updater.
 
-`Express` `GraphQL` `Apollo` `SQLite` `React`
+`Electron` `PixiJS` `Node.js` `Roguelike`
 
 </td>
 </tr>
@@ -116,19 +116,15 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/NanoFarm"><strong>NanoFarm</strong></a>
+<a href="https://github.com/w1ck3ds0d4/RimDocPlus"><strong>RimDoc+</strong></a>
 
-Pixel-art isometric idle city builder shipping as both a Vite web app and a VS Code extension. 150x150 procgen biome map, farm + mine buildings with terrain bonuses, road connectivity via BFS, materials HUD. Claude Code hook drains tool calls from `~/.nanofarm/tokens.jsonl` into in-game resources.
+Desktop app that diagnoses, repairs and supervises a modded RimWorld install. 11 static rules over the load order, plus `Player.log` parsed into per-mod stack-trace attribution. Repairs are plans rather than actions: one plan drives the shell, a readable PowerShell script and its own rollback, so the preview cannot lie about what will happen. Every write is backed up first.
 
-`Vite` `React` `PixiJS` `VS Code` `Claude Code`
+`Tauri` `Rust` `React` `TypeScript` `Vite`
 
 </td>
 </tr>
 </table>
-
-<p>
-Also public: <a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a> - a 2D top-down co-op roguelike for up to 4 players (Electron + PixiJS): 3 classes with 10-tier skill trees, 8 multi-phase bosses, an embedded server for offline solo and hosted invite-code sessions online, signed auto-updater.
-</p>
 
 ---
 
