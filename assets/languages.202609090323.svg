@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="968" height="250" viewBox="0 0 968 250" fill="none" role="img">
+  <rect width="968" height="250" fill="#0a192f" rx="6"/>
+  <style>
+    .title { font: 700 15px "Segoe UI", Helvetica, sans-serif; fill: #64ffda; letter-spacing: 0.5px; }
+    .lang-name { font: 600 13px "Segoe UI", Helvetica, sans-serif; fill: #ccd6f6; }
+    .lang-pct { font: 400 13px "Segoe UI", Helvetica, sans-serif; fill: #8892b0; }
+  </style>
+  <text x="30" y="30" class="title">Most Used Languages</text>
+  <path d="M 130 67 A 78 78 0 1 1 70.67336807680968 195.63941888144348 L 91.97010774154467 177.46116594964326 A 50 50 0 1 0 130 95 Z" fill="#3178c6"/><path d="M 70.67336807680968 195.63941888144348 A 78 78 0 0 1 52.851558657401256 133.50574063248956 L 80.54587093423157 137.63188502082664 A 50 50 0 0 0 91.97010774154467 177.46116594964326 Z" fill="#7355dd"/><path d="M 52.851558657401256 133.50574063248956 A 78 78 0 0 1 81.36194874493786 84.02180742175159 L 98.82176201598581 105.91141501394333 A 50 50 0 0 0 80.54587093423157 137.63188502082664 Z" fill="#dea584"/><path d="M 81.36194874493786 84.02180742175159 A 78 78 0 0 1 99.46598468092236 73.22483780238227 L 110.42691325700152 98.99028064255273 A 50 50 0 0 0 98.82176201598581 105.91141501394333 Z" fill="#663399"/><path d="M 99.46598468092236 73.22483780238227 A 78 78 0 0 1 112.39491965612913 69.01275668846874 L 118.71469208726226 96.29022864645432 A 50 50 0 0 0 110.42691325700152 98.99028064255273 Z" fill="#f1e05a"/><path d="M 112.39491965612913 69.01275668846874 A 78 78 0 0 1 119.54094400497985 67.7044105547216 L 123.29547692626913 95.45154522738565 A 50 50 0 0 0 118.71469208726226 96.29022864645432 Z" fill="#3572A5"/><path d="M 119.54094400497985 67.7044105547216 A 78 78 0 0 1 124.2217993351414 67.21431753158794 L 126.29602521483423 95.1373830330692 A 50 50 0 0 0 123.29547692626913 95.45154522738565 Z" fill="#e34c26"/><path d="M 124.2217993351414 67.21431753158794 A 78 78 0 0 1 126.56818002438837 67.0755326508099 L 127.80011540024896 95.04841836590379 A 50 50 0 0 0 126.29602521483423 95.1373830330692 Z" fill="#89e051"/><path d="M 126.56818002438837 67.0755326508099 A 78 78 0 0 1 128.2585818700394 67.0194417633687 L 128.88370632694833 95.01246266882609 A 50 50 0 0 0 127.80011540024896 95.04841836590379 Z" fill="#336790"/><path d="M 128.2585818700394 67.0194417633687 A 78 78 0 0 1 129.22392212829982 67.00386097288497 L 129.50251418480758 95.00247498261857 A 50 50 0 0 0 128.88370632694833 95.01246266882609 Z" fill="#A97BFF"/>
+  
+    <rect x="290" y="69" width="12" height="12" rx="3" fill="#3178c6"/>
+    <text x="312" y="80" class="lang-name">TypeScript</text>
+    <text x="599" y="80" class="lang-pct" text-anchor="end">63.75%</text>
+    <rect x="290" y="99" width="12" height="12" rx="3" fill="#7355dd"/>
+    <text x="312" y="110" class="lang-name">C#</text>
+    <text x="599" y="110" class="lang-pct" text-anchor="end">13.60%</text>
+    <rect x="290" y="129" width="12" height="12" rx="3" fill="#dea584"/>
+    <text x="312" y="140" class="lang-name">Rust</text>
+    <text x="599" y="140" class="lang-pct" text-anchor="end">11.93%</text>
+    <rect x="290" y="159" width="12" height="12" rx="3" fill="#663399"/>
+    <text x="312" y="170" class="lang-name">CSS</text>
+    <text x="599" y="170" class="lang-pct" text-anchor="end">4.31%</text>
+    <rect x="290" y="189" width="12" height="12" rx="3" fill="#f1e05a"/>
+    <text x="312" y="200" class="lang-name">JavaScript</text>
+    <text x="599" y="200" class="lang-pct" text-anchor="end">2.78%</text>
+    <rect x="629" y="69" width="12" height="12" rx="3" fill="#3572A5"/>
+    <text x="651" y="80" class="lang-name">Python</text>
+    <text x="938" y="80" class="lang-pct" text-anchor="end">1.48%</text>
+    <rect x="629" y="99" width="12" height="12" rx="3" fill="#e34c26"/>
+    <text x="651" y="110" class="lang-name">HTML</text>
+    <text x="938" y="110" class="lang-pct" text-anchor="end">0.96%</text>
+    <rect x="629" y="129" width="12" height="12" rx="3" fill="#89e051"/>
+    <text x="651" y="140" class="lang-name">Shell</text>
+    <text x="938" y="140" class="lang-pct" text-anchor="end">0.48%</text>
+    <rect x="629" y="159" width="12" height="12" rx="3" fill="#336790"/>
+    <text x="651" y="170" class="lang-name">PLpgSQL</text>
+    <text x="938" y="170" class="lang-pct" text-anchor="end">0.35%</text>
+    <rect x="629" y="189" width="12" height="12" rx="3" fill="#A97BFF"/>
+    <text x="651" y="200" class="lang-name">Kotlin</text>
+    <text x="938" y="200" class="lang-pct" text-anchor="end">0.20%</text>
+</svg>
