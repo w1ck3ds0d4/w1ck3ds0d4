@@ -14,8 +14,6 @@
 
 </div>
 
----
-
 ## What I work on
 
 - **Security & compliance tooling** - CI security baselines, tamper-evident audit logging, SBOM/CVE evidence pipelines, AI evaluation environments
@@ -23,7 +21,7 @@
 - **Desktop & mobile apps** - Tauri (Rust + React/Svelte), Flutter, Electron, .NET/Blazor
 - **Intelligence tooling** - real-time data aggregation, MITM filter proxies, log correlation
 
-## Stack
+## Tech stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
@@ -125,8 +123,6 @@ Desktop app that diagnoses, repairs and supervises a modded RimWorld install. 11
 </td>
 </tr>
 </table>
-
----
 
 ## Statistics
 
