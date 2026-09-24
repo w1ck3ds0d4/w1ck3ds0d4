@@ -89,11 +89,11 @@ Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgr
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/ProofLog"><strong>ProofLog</strong></a>
+<a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
 
-.NET SDK for tamper-evident audit logs. Every entry is hash-chained to the one before it and ECDSA-signed, so an edit or a deletion breaks verification, and each record is tied to the identity that wrote it. The evidence core behind the CRA tooling.
+Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
 
-`.NET` `C#` `ECDSA` `SQLite`
+`Tauri` `Rust` `React` `hudsucker` `arti`
 
 </td>
 <td width="50%" valign="top">
