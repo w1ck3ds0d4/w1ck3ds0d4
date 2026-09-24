@@ -1,97 +1,185 @@
 <div align="center">
 
-<img src="assets/banner.202609240326.svg" alt="Daniel Silva" />
+<img src="assets/banner.202609240326.svg" alt="banner" />
+
+<a href="https://github.com/w1ck3ds0d4">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Software+Engineer;%3E+Platform+%26+DevSecOps;%3E+Security+%26+Compliance+Tooling;%3E+Desktop%2C+Web+%26+AI+Apps" alt="typing" />
+</a>
+
+<br>
+
+<a href="mailto:daniel.svs@outlook.com"><img src="https://img.shields.io/badge/-daniel.svs%40outlook.com-0a192f?style=for-the-badge&logo=microsoftoutlook&logoColor=white&labelColor=0078d4" alt="email" /></a>
+<a href="https://github.com/w1ck3ds0d4"><img src="https://img.shields.io/badge/-w1ck3ds0d4-181717?style=for-the-badge&logo=github&logoColor=white" alt="github" /></a>
+<img src="https://komarev.com/ghpvc/?username=w1ck3ds0d4&style=for-the-badge&color=64ffda&labelColor=0a192f&label=profile+views" alt="views" />
 
 </div>
 
-I'm Daniel, a software engineer in Malta. I build security and compliance tooling for small
-software teams, and the backend and desktop software around it, mostly in C#, TypeScript and Rust.
+---
 
-Most of my work right now is about the EU Cyber Resilience Act: helping teams that ship software
-produce the evidence the regulation asks for (SBOMs, vulnerability handling, technical
-documentation) straight from their CI, without needing a compliance department. That work runs
-under [WickIT Lab](https://wickitlab.com).
+## What I work on
 
-## Compliance and security tooling
-
-**[CRA-Check](https://github.com/w1ck3ds0d4/CRA-Check)**  
-A free GitHub Action that builds a CycloneDX SBOM, checks it against known CVEs and writes CRA
-evidence mapped to Annex I and Annex VII on every build.  
-`GitHub Actions` `Python` `CycloneDX`
-
-**[SecureCheck](https://github.com/w1ck3ds0d4/SecureCheck)**  
-One reusable workflow that runs gitleaks, Semgrep, Trivy and per-language linters, then posts a
-single verdict per run. Every project on this profile runs it, including SecureCheck itself.  
-`GitHub Actions` `gitleaks` `Semgrep` `Trivy`
-
-**[ProofLog](https://github.com/w1ck3ds0d4/ProofLog)**  
-A .NET library for hash-chained, ECDSA-signed audit logs: records that show when they have been
-altered and who wrote each entry.  
-`.NET` `C#` `ECDSA`
-
-**CRADesk**  
-The commercial side of this work: Annex VII technical documentation, CVE monitoring and incident
-report drafts for small software teams. The code is private; the offer is on
-[wickitlab.com](https://wickitlab.com).
-
-## Other work
-
-**[RimDoc+](https://github.com/w1ck3ds0d4/RimDocPlus)**  
-A desktop app that diagnoses, repairs and supervises a modded RimWorld install. Repairs are plans,
-not actions: one plan drives the interface, a readable PowerShell script and its own rollback, and
-every write is backed up first.  
-`Tauri` `Rust` `TypeScript` `React`
-
-**[Griddy](https://github.com/w1ck3ds0d4/Griddy)**  
-An independent, tamper-evident public archive of Malta's power outages. Each capture is chained
-to the one before it, so the record cannot be quietly rewritten.  
-`Python` `GitHub Actions`
-
-**[GrainWallet](https://github.com/w1ck3ds0d4/GrainWallet)**  
-A per-player wallet microservice on Microsoft Orleans, with each revision kept side by side and
-compared under load. The second version adds a `FOR UPDATE SKIP LOCKED` outbox, real idempotency
-and back-pressure.  
-`.NET` `Orleans` `PostgreSQL` `NBomber`
-
-**[ThreatLens](https://github.com/w1ck3ds0d4/ThreatLens)**  
-Log aggregation and correlation on .NET Aspire: an ingest API, a rule-based correlator, a query
-and stats API and a Blazor dashboard, with OpenTelemetry throughout. One `dotnet run` starts the
-whole stack.  
-`.NET Aspire` `Blazor` `PostgreSQL` `Redis`
-
-**[BlueFlame](https://github.com/w1ck3ds0d4/BlueFlame)**  
-A privacy-first browser shell that strips trackers at the network layer through a local filtering
-proxy, with optional Tor routing through arti.  
-`Tauri` `Rust` `React`
-
-**[Purrmadeath](https://github.com/w1ck3ds0d4/Purrmadeath)**  
-A 2D co-op roguelike for up to four players. The same embedded server runs solo and online
-sessions, so there is one code path instead of two.  
-`Electron` `PixiJS` `TypeScript`
-
-**[GlassVault](https://github.com/w1ck3ds0d4/GlassVault)**  
-A deliberately vulnerable multi-tenant document API for evaluating security tooling. Not for
-production use.  
-`TypeScript` `Node.js`
+- **EU CRA compliance tooling** - SBOM and CVE evidence generated in CI, Annex VII technical documentation, tamper-evident audit logs; the commercial side runs under [WickIT Lab](https://wickitlab.com)
+- **Security tooling** - CI security baselines, secret and dependency scanning, AI security evaluation environments
+- **Backend & platform engineering** - .NET (Aspire, Orleans), Kubernetes, observability with OpenTelemetry, load-tested microservices
+- **Desktop & mobile apps** - Tauri (Rust + React/Svelte), Flutter, Electron, .NET/Blazor
+- **Games** - a co-op roguelike on PixiJS, and an RPG in progress on RPG Maker MZ
+- **Intelligence tooling** - real-time data aggregation, MITM filter proxies, log correlation
 
 ## Stack
 
-**Languages:** C#, TypeScript, Rust, Python, Dart  
-**Backend and platform:** .NET (ASP.NET Core, Aspire, Orleans, EF Core), Node.js, PostgreSQL,
-Redis, SQLite, Docker, Kubernetes, OpenTelemetry, GitHub Actions  
-**Apps:** React, Tauri, Flutter, Electron, Blazor  
-**Security:** supply-chain and CI hardening, SBOMs, SAST, secret scanning, tamper-evident logging
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white" />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tauri-FFC131?style=for-the-badge&logo=tauri&logoColor=black" />
+  <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" />
+  <img src="https://img.shields.io/badge/Blazor-512BD4?style=for-the-badge&logo=blazor&logoColor=white" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/CesiumJS-6CADDF?style=for-the-badge&logo=cesium&logoColor=white" />
+  <img src="https://img.shields.io/badge/PixiJS-E91E63?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/.NET%20Aspire-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+</p>
 
-## Activity
+## Public projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/CRA-Check"><strong>CRA-Check</strong></a>
+
+Free GitHub Action for the EU Cyber Resilience Act. On every build it generates a CycloneDX SBOM, scans it for known CVEs, and emits CRA evidence mapped to Annex I and Annex VII. Tagged v1.0.0 and consumed as <code>uses: w1ck3ds0d4/CRA-Check@v1</code>.
+
+`GitHub Actions` `Python` `CycloneDX` `SBOM` `EU CRA`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/ProofLog"><strong>ProofLog</strong></a>
+
+.NET SDK for tamper-evident audit logs. Every entry is hash-chained to the one before it and ECDSA-signed, so an edit or a deletion breaks verification, and each record is tied to the identity that wrote it. The evidence core behind the CRA tooling.
+
+`.NET` `C#` `ECDSA` `SQLite`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/SecureCheck"><strong>SecureCheck</strong></a>
+
+Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgrep), dependency/container/license scanning (Trivy), per-language linters, complexity and duplication metrics, posted as one severity-coloured verdict per run, with an optional AI review step and Discord digest. Consumed as a single <code>workflow_call</code> pinned to <code>@v1</code> across every repo here, and it scans itself.
+
+`GitHub Actions` `gitleaks` `Semgrep` `Trivy` `Node.js`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/Griddy"><strong>Griddy</strong></a>
+
+Independent, tamper-evident public archive of Malta's power outages. A scheduled scraper captures the outage feed and hash-chains every capture to the one before it, so the record cannot be quietly rewritten, and the archive is published with GitHub Pages.
+
+`Python` `GitHub Actions` `GitHub Pages`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/GrainWallet"><strong>GrainWallet</strong></a>
+
+Per-player wallet microservice on Microsoft Orleans, with each revision committed side by side and compared under an NBomber load dashboard. v2 hardens v1 with a `FOR UPDATE SKIP LOCKED` outbox, real LRU idempotency, HTTP 503 back-pressure, and pre-grain validation. Engineering journal, tests, and load harness per version.
+
+`.NET` `Orleans` `PostgreSQL` `NBomber` `Microservices`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/ThreatLens"><strong>ThreatLens</strong></a>
+
+Log aggregation and correlation engine built on .NET Aspire. Ingest API for single and batch events, a background correlator that runs regex rules against messages to tag matches and elevate severity, a paginated query plus 24h stats API, and a Blazor dashboard. One `dotnet run` orchestrates Postgres, Redis, pgAdmin, and every service, with OpenTelemetry traces, metrics, and logs throughout.
+
+`.NET Aspire` `C#` `Blazor` `PostgreSQL` `Redis`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a>
+
+2D top-down co-op roguelike for up to 4 players. 3 classes with 10-tier skill trees and 8 multi-phase bosses. The same embedded server runs offline solo and hosts invite-code sessions online, so there is one code path rather than a single-player mode and a multiplayer one. Signed auto-updater.
+
+`Electron` `PixiJS` `Node.js` `Roguelike`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
+
+Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
+
+`Tauri` `Rust` `React` `hudsucker` `arti`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/RimDocPlus"><strong>RimDoc+</strong></a>
+
+Desktop app that diagnoses, repairs and supervises a modded RimWorld install. 11 static rules over the load order, plus `Player.log` parsed into per-mod stack-trace attribution. Repairs are plans rather than actions: one plan drives the shell, a readable PowerShell script and its own rollback, so the preview cannot lie about what will happen. Every write is backed up first.
+
+`Tauri` `Rust` `React` `TypeScript` `Vite`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
+
+Intentionally vulnerable multi-tenant document API, built as a target for evaluating AI security tooling, with every vulnerability documented. Not for production.
+
+`TypeScript` `Express` `GraphQL` `Apollo`
+
+</td>
+</tr>
+</table>
+
+---
+
+## Statistics
 
 <div align="center">
 
-<img src="assets/stats.202609240326.svg" alt="GitHub activity" />
-<img src="assets/languages.202609240326.svg" alt="Most used languages" />
+<img src="assets/stats.202609240326.svg" alt="stats" />
+
+<img src="assets/languages.202609240326.svg" alt="languages" />
+
+<img src="assets/streak.202609240326.svg" alt="streak" />
+
+<img src="assets/trophies.202609240326.svg" alt="trophies" />
 
 </div>
-
-## Contact
-
-Email: [daniel.svs@outlook.com](mailto:daniel.svs@outlook.com)  
-Web: [wickitlab.com](https://wickitlab.com)
