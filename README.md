@@ -78,17 +78,6 @@ Free GitHub Action for the EU Cyber Resilience Act. On every build it generates 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/ProofLog"><strong>ProofLog</strong></a>
-
-.NET SDK for tamper-evident audit logs. Every entry is hash-chained to the one before it and ECDSA-signed, so an edit or a deletion breaks verification, and each record is tied to the identity that wrote it. The evidence core behind the CRA tooling.
-
-`.NET` `C#` `ECDSA` `SQLite`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
 <a href="https://github.com/w1ck3ds0d4/SecureCheck"><strong>SecureCheck</strong></a>
 
 Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgrep), dependency/container/license scanning (Trivy), per-language linters, complexity and duplication metrics, posted as one severity-coloured verdict per run, with an optional AI review step and Discord digest. Consumed as a single <code>workflow_call</code> pinned to <code>@v1</code> across every repo here, and it scans itself.
@@ -96,24 +85,15 @@ Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgr
 `GitHub Actions` `gitleaks` `Semgrep` `Trivy` `Node.js`
 
 </td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/Griddy"><strong>Griddy</strong></a>
-
-Independent, tamper-evident public archive of Malta's power outages. A scheduled scraper captures the outage feed and hash-chains every capture to the one before it, so the record cannot be quietly rewritten, and the archive is published with GitHub Pages.
-
-`Python` `GitHub Actions` `GitHub Pages`
-
-</td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/GrainWallet"><strong>GrainWallet</strong></a>
+<a href="https://github.com/w1ck3ds0d4/ProofLog"><strong>ProofLog</strong></a>
 
-Per-player wallet microservice on Microsoft Orleans, with each revision committed side by side and compared under an NBomber load dashboard. v2 hardens v1 with a `FOR UPDATE SKIP LOCKED` outbox, real LRU idempotency, HTTP 503 back-pressure, and pre-grain validation. Engineering journal, tests, and load harness per version.
+.NET SDK for tamper-evident audit logs. Every entry is hash-chained to the one before it and ECDSA-signed, so an edit or a deletion breaks verification, and each record is tied to the identity that wrote it. The evidence core behind the CRA tooling.
 
-`.NET` `Orleans` `PostgreSQL` `NBomber` `Microservices`
+`.NET` `C#` `ECDSA` `SQLite`
 
 </td>
 <td width="50%" valign="top">
@@ -129,24 +109,13 @@ Log aggregation and correlation engine built on .NET Aspire. Ingest API for sing
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a>
+<a href="https://github.com/w1ck3ds0d4/GrainWallet"><strong>GrainWallet</strong></a>
 
-2D top-down co-op roguelike for up to 4 players. 3 classes with 10-tier skill trees and 8 multi-phase bosses. The same embedded server runs offline solo and hosts invite-code sessions online, so there is one code path rather than a single-player mode and a multiplayer one. Signed auto-updater.
+Per-player wallet microservice on Microsoft Orleans, with each revision committed side by side and compared under an NBomber load dashboard. v2 hardens v1 with a `FOR UPDATE SKIP LOCKED` outbox, real LRU idempotency, HTTP 503 back-pressure, and pre-grain validation. Engineering journal, tests, and load harness per version.
 
-`Electron` `PixiJS` `Node.js` `Roguelike`
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
-
-Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
-
-`Tauri` `Rust` `React` `hudsucker` `arti`
+`.NET` `Orleans` `PostgreSQL` `NBomber` `Microservices`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/RimDocPlus"><strong>RimDoc+</strong></a>
@@ -154,15 +123,6 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 Desktop app that diagnoses, repairs and supervises a modded RimWorld install. 11 static rules over the load order, plus `Player.log` parsed into per-mod stack-trace attribution. Repairs are plans rather than actions: one plan drives the shell, a readable PowerShell script and its own rollback, so the preview cannot lie about what will happen. Every write is backed up first.
 
 `Tauri` `Rust` `React` `TypeScript` `Vite`
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/GlassVault"><strong>GlassVault</strong></a>
-
-Intentionally vulnerable multi-tenant document API, built as a target for evaluating AI security tooling, with every vulnerability documented. Not for production.
-
-`TypeScript` `Express` `GraphQL` `Apollo`
 
 </td>
 </tr>
