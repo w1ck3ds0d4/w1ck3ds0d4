@@ -18,9 +18,11 @@
 
 ## What I work on
 
-- **Security & compliance tooling** - CI security baselines, tamper-evident audit logging, SBOM/CVE evidence pipelines, AI evaluation environments
+- **EU CRA compliance tooling** - SBOM and CVE evidence generated in CI, Annex VII technical documentation, tamper-evident audit logs; the commercial side runs under [WickIT Lab](https://wickitlab.com)
+- **Security tooling** - CI security baselines, secret and dependency scanning, AI security evaluation environments
 - **Backend & platform engineering** - .NET (Aspire, Orleans), Kubernetes, observability with OpenTelemetry, load-tested microservices
 - **Desktop & mobile apps** - Tauri (Rust + React/Svelte), Flutter, Electron, .NET/Blazor
+- **Games** - a co-op roguelike on PixiJS, and an RPG in progress on RPG Maker MZ
 - **Intelligence tooling** - real-time data aggregation, MITM filter proxies, log correlation
 
 ## Stack
@@ -67,11 +69,31 @@
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/GrainWallet"><strong>GrainWallet</strong></a>
+<a href="https://github.com/w1ck3ds0d4/CRA-Check"><strong>CRA-Check</strong></a>
 
-Per-player wallet microservice on Microsoft Orleans, with each revision committed side by side and compared under an NBomber load dashboard. v2 hardens v1 with a `FOR UPDATE SKIP LOCKED` outbox, real LRU idempotency, HTTP 503 back-pressure, and pre-grain validation. Engineering journal, tests, and load harness per version.
+Free GitHub Action for the EU Cyber Resilience Act. On every build it generates a CycloneDX SBOM, scans it for known CVEs, and emits CRA evidence mapped to Annex I and Annex VII. Tagged v1.0.0 and consumed as <code>uses: w1ck3ds0d4/CRA-Check@v1</code>.
 
-`.NET` `Orleans` `PostgreSQL` `NBomber` `Microservices`
+`GitHub Actions` `Python` `CycloneDX` `SBOM` `EU CRA`
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/SecureCheck"><strong>SecureCheck</strong></a>
+
+Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgrep), dependency/container/license scanning (Trivy), per-language linters, complexity and duplication metrics, posted as one severity-coloured verdict per run, with an optional AI review step and Discord digest. Consumed as a single <code>workflow_call</code> pinned to <code>@v1</code> across every repo here, and it scans itself.
+
+`GitHub Actions` `gitleaks` `Semgrep` `Trivy` `Node.js`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
+
+Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
+
+`Tauri` `Rust` `React` `hudsucker` `arti`
 
 </td>
 <td width="50%" valign="top">
@@ -87,31 +109,11 @@ Log aggregation and correlation engine built on .NET Aspire. Ingest API for sing
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/SecureCheck"><strong>SecureCheck</strong></a>
+<a href="https://github.com/w1ck3ds0d4/GrainWallet"><strong>GrainWallet</strong></a>
 
-Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgrep), dependency/container/license scanning (Trivy), per-language linters, complexity and duplication metrics - posted as one severity-coloured verdict per run, with an optional AI review step and Discord digest. Consumed as a single `workflow_call` across every repo here, and it scans itself.
+Per-player wallet microservice on Microsoft Orleans, with each revision committed side by side and compared under an NBomber load dashboard. v2 hardens v1 with a `FOR UPDATE SKIP LOCKED` outbox, real LRU idempotency, HTTP 503 back-pressure, and pre-grain validation. Engineering journal, tests, and load harness per version.
 
-`GitHub Actions` `gitleaks` `Semgrep` `Trivy` `Node.js`
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a>
-
-2D top-down co-op roguelike for up to 4 players. 3 classes with 10-tier skill trees and 8 multi-phase bosses. The same embedded server runs offline solo and hosts invite-code sessions online, so there is one code path rather than a single-player mode and a multiplayer one. Signed auto-updater.
-
-`Electron` `PixiJS` `Node.js` `Roguelike`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
-
-Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
-
-`Tauri` `Rust` `React` `hudsucker` `arti`
+`.NET` `Orleans` `PostgreSQL` `NBomber` `Microservices`
 
 </td>
 <td width="50%" valign="top">
