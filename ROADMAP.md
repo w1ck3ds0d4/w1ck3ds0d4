@@ -11,7 +11,7 @@ running; there is nothing to build beyond that.
 ## Now
 No new features without Daniel's go.
 - [ ] **Keep CI green**: the stats-refresh workflow under `.github/` and the `scripts/` it runs should keep succeeding on schedule. Done when: the latest scheduled run on the Actions tab is green.
-- [ ] **Keep the profile accurate**: README claims (stack, focus areas, links) should match what Daniel is actually doing. Done when: a read-through finds nothing stale.
+- [x] **Keep the profile accurate**: README claims (stack, focus areas, links) should match what Daniel is actually doing. Done when: a read-through finds nothing stale. (#PR)
 
 ## Next
 - [ ] (parked) Add a project or two to the pinned/featured list as they become presentable.

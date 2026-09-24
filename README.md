@@ -19,7 +19,7 @@
 ## What I work on
 
 - **Security & compliance tooling** - CI security baselines, tamper-evident audit logging, SBOM/CVE evidence pipelines, AI evaluation environments
-- **Backend & platform engineering** - .NET (Aspire, Orleans), Kubernetes, observability with OpenTelemetry, load-tested microservices
+- **Backend & platform engineering** - .NET (Aspire, Orleans), Kafka, Kubernetes, observability with OpenTelemetry, load-tested microservices
 - **Desktop & mobile apps** - Tauri (Rust + React/Svelte), Flutter, Electron, .NET/Blazor
 - **Intelligence tooling** - real-time data aggregation, MITM filter proxies, log correlation
 
@@ -69,9 +69,9 @@
 
 <a href="https://github.com/w1ck3ds0d4/GrainWallet"><strong>GrainWallet</strong></a>
 
-Per-player wallet microservice on Microsoft Orleans, with each revision committed side by side and compared under an NBomber load dashboard. v2 hardens v1 with a `FOR UPDATE SKIP LOCKED` outbox, real LRU idempotency, HTTP 503 back-pressure, and pre-grain validation. Engineering journal, tests, and load harness per version.
+Per-player wallet microservice on Microsoft Orleans, with Kafka and Postgres, each revision committed side by side and compared under an NBomber load dashboard. v2 hardens v1 with a `FOR UPDATE SKIP LOCKED` outbox, real LRU idempotency, HTTP 503 back-pressure, and pre-grain validation. Engineering journal, tests, and load harness per version.
 
-`.NET` `Orleans` `PostgreSQL` `NBomber` `Microservices`
+`.NET` `Orleans` `Kafka` `PostgreSQL` `NBomber` `Microservices`
 
 </td>
 <td width="50%" valign="top">
