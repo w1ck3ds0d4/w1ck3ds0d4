@@ -71,7 +71,7 @@
 
 <a href="https://github.com/w1ck3ds0d4/CRA-Check"><strong>CRA-Check</strong></a>
 
-Free GitHub Action for the EU Cyber Resilience Act. On every build it generates a CycloneDX SBOM, scans it for known CVEs, and emits CRA evidence mapped to Annex I and Annex VII. Tagged v1.0.0 and consumed as <code>uses: w1ck3ds0d4/CRA-Check@v1</code>.
+Free GitHub Action that turns every build into EU Cyber Resilience Act evidence. It generates a CycloneDX SBOM, scans it for known vulnerabilities, and maps the results to the regulation's Annex I and Annex VII requirements.
 
 `GitHub Actions` `Python` `CycloneDX` `SBOM` `EU CRA`
 
@@ -80,9 +80,9 @@ Free GitHub Action for the EU Cyber Resilience Act. On every build it generates 
 
 <a href="https://github.com/w1ck3ds0d4/SecureCheck"><strong>SecureCheck</strong></a>
 
-Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgrep), dependency/container/license scanning (Trivy), per-language linters, complexity and duplication metrics, posted as one severity-coloured verdict per run, with an optional AI review step and Discord digest. Consumed as a single <code>workflow_call</code> pinned to <code>@v1</code> across every repo here, and it scans itself.
+Reusable security pipeline for GitHub Actions. Secret scanning, static analysis, dependency and container checks run in a single pass and report one severity-graded verdict, with an optional AI review. Every repository here runs on it.
 
-`GitHub Actions` `gitleaks` `Semgrep` `Trivy` `Node.js`
+`GitHub Actions` `Gitleaks` `Semgrep` `Trivy` `Node.js`
 
 </td>
 </tr>
@@ -91,7 +91,7 @@ Reusable multi-scanner security workflow for CI: secrets (gitleaks), SAST (Semgr
 
 <a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
 
-Privacy-first browser shell built on a local MITM filter proxy. Strips trackers, analytics, and fingerprinting at the network layer. Embedded Tor via arti, private tabs, bookmark folders, downloads, resource metrics, and a themed right-click menu.
+Privacy-first desktop browser that blocks trackers, ads and fingerprinting at the network layer through its own local filtering proxy. Includes optional Tor routing, private tabs and a live privacy dashboard.
 
 `Tauri` `Rust` `React` `hudsucker` `arti`
 
@@ -100,7 +100,7 @@ Privacy-first browser shell built on a local MITM filter proxy. Strips trackers,
 
 <a href="https://github.com/w1ck3ds0d4/ThreatLens"><strong>ThreatLens</strong></a>
 
-Log aggregation and correlation engine built on .NET Aspire. Ingest API for single and batch events, a background correlator that runs regex rules against messages to tag matches and elevate severity, a paginated query plus 24h stats API, and a Blazor dashboard. One `dotnet run` orchestrates Postgres, Redis, pgAdmin, and every service, with OpenTelemetry traces, metrics, and logs throughout.
+Log aggregation and correlation engine on .NET Aspire. Events arrive through an ingest API, a background correlator applies detection rules to flag and escalate matches, and a Blazor dashboard presents the results with full OpenTelemetry tracing.
 
 `.NET Aspire` `C#` `Blazor` `PostgreSQL` `Redis`
 
@@ -111,18 +111,18 @@ Log aggregation and correlation engine built on .NET Aspire. Ingest API for sing
 
 <a href="https://github.com/w1ck3ds0d4/GrainWallet"><strong>GrainWallet</strong></a>
 
-Per-player wallet microservice on Microsoft Orleans, with each revision committed side by side and compared under an NBomber load dashboard. v2 hardens v1 with a `FOR UPDATE SKIP LOCKED` outbox, real LRU idempotency, HTTP 503 back-pressure, and pre-grain validation. Engineering journal, tests, and load harness per version.
+Per-player wallet microservice on Microsoft Orleans, built in versions that are load-tested side by side. The second version adds a transactional outbox, request idempotency and back-pressure, each measured under load and documented in an engineering journal.
 
-`.NET` `Orleans` `PostgreSQL` `NBomber` `Microservices`
+`.NET` `Orleans` `Kafka` `PostgreSQL` `NBomber`
 
 </td>
 <td width="50%" valign="top">
 
 <a href="https://github.com/w1ck3ds0d4/RimDocPlus"><strong>RimDoc+</strong></a>
 
-Desktop app that diagnoses, repairs and supervises a modded RimWorld install. 11 static rules over the load order, plus `Player.log` parsed into per-mod stack-trace attribution. Repairs are plans rather than actions: one plan drives the shell, a readable PowerShell script and its own rollback, so the preview cannot lie about what will happen. Every write is backed up first.
+Desktop app that diagnoses, repairs and supervises a modded RimWorld install. Load-order analysis and per-mod crash attribution pinpoint what broke, and every fix is a reviewable plan with its own rollback and a backup made first.
 
-`Tauri` `Rust` `React` `TypeScript` `Vite`
+`Tauri` `Rust` `TypeScript` `React` `C#`
 
 </td>
 </tr>
