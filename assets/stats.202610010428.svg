@@ -9,11 +9,11 @@
   <line x1="484" y1="55" x2="484" y2="190" stroke="#8892b0" stroke-opacity="0.2"/>
   
     <text x="30" y="70" class="label">Total Stars Earned</text>
-    <text x="454" y="70" class="value" text-anchor="end">6</text>
+    <text x="454" y="70" class="value" text-anchor="end">7</text>
     <text x="514" y="70" class="label">Merge Rate</text>
     <text x="938" y="70" class="value" text-anchor="end">97%</text>
     <text x="30" y="102" class="label">Total Commits</text>
-    <text x="454" y="102" class="value" text-anchor="end">3,389</text>
+    <text x="454" y="102" class="value" text-anchor="end">3,401</text>
     <text x="514" y="102" class="label">Issues Fixed</text>
     <text x="938" y="102" class="value" text-anchor="end">0</text>
     <text x="30" y="134" class="label">Total PRs</text>
