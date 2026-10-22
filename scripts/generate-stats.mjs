@@ -162,25 +162,27 @@ function computeStreaks(days) {
     }
   }
 
-  const past = [...days].filter(d => d.date <= today).reverse();
-  let current = 0, currentStart = null, currentEnd = null, i = 0;
-  if (past[0] && past[0].count === 0) i = 1;
-  for (; i < past.length; i++) {
-    if (past[i].count > 0) {
-      if (current === 0) currentEnd = past[i].date;
+  // Walk days newest-first without allocating a filtered and reversed copy.
+  let current = 0, currentStart = null, currentEnd = null;
+  let j = days.length - 1;
+  while (j >= 0 && days[j].date > today) j--; // skip any future-dated days
+  if (j >= 0 && days[j].count === 0) j--; // a zero-count latest day does not break the streak
+  for (; j >= 0; j--) {
+    if (days[j].count > 0) {
+      if (current === 0) currentEnd = days[j].date;
       current += 1;
-      currentStart = past[i].date;
+      currentStart = days[j].date;
     } else break;
   }
 
   return { current, longest, currentStart, currentEnd, longestStart, longestEnd };
 }
 
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 function formatShort(iso) {
   if (!iso) return '-';
   const d = new Date(iso + 'T00:00:00Z');
-  const m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  return `${m[d.getUTCMonth()]} ${d.getUTCDate()}`;
+  return `${MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}`;
 }
 
 function bannerSVG() {
