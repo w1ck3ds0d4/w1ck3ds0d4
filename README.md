@@ -69,7 +69,7 @@
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/CRA-Check"><strong>CRA-Check</strong></a>
+<a href="https://github.com/wickitlab/CRA-Check"><strong>CRA-Check</strong></a>
 
 Free GitHub Action that turns every build into EU Cyber Resilience Act evidence. It generates a CycloneDX SBOM, scans it for known vulnerabilities, and maps the results to the regulation's Annex I and Annex VII requirements.
 
@@ -78,7 +78,7 @@ Free GitHub Action that turns every build into EU Cyber Resilience Act evidence.
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/SecureCheck"><strong>SecureCheck</strong></a>
+<a href="https://github.com/wickitlab/SecureCheck"><strong>SecureCheck</strong></a>
 
 Reusable security pipeline for GitHub Actions. Secret scanning, static analysis, dependency and container checks run in a single pass and report one severity-graded verdict, with an optional AI review. Every repository here runs on it.
 
@@ -89,7 +89,7 @@ Reusable security pipeline for GitHub Actions. Secret scanning, static analysis,
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/BlueFlame"><strong>BlueFlame</strong></a>
+<a href="https://github.com/wickitlab/BlueFlame"><strong>BlueFlame</strong></a>
 
 Privacy-first desktop browser that blocks trackers, ads and fingerprinting at the network layer through its own local filtering proxy. Includes optional Tor routing, private tabs and a live privacy dashboard.
 
@@ -98,7 +98,7 @@ Privacy-first desktop browser that blocks trackers, ads and fingerprinting at th
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/ThreatLens"><strong>ThreatLens</strong></a>
+<a href="https://github.com/wickitlab/ThreatLens"><strong>ThreatLens</strong></a>
 
 Log aggregation and correlation engine on .NET Aspire. Events arrive through an ingest API, a background correlator applies detection rules to flag and escalate matches, and a Blazor dashboard presents the results with full OpenTelemetry tracing.
 
