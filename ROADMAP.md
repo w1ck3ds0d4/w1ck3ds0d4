@@ -1,6 +1,6 @@
 # Roadmap
 
-**Status:** maintain. **Last reviewed:** 2026-09-24.
+**Status:** maintain. **Last reviewed:** 2026-11-21.
 
 This is the maintainer's GitHub profile README. There is no product here, so "done"
 means the profile stays accurate and the automation that refreshes it keeps
@@ -23,6 +23,8 @@ No new features without the maintainer's go.
 (empty to start; threads add proposals here)
 
 ## Done
+- [x] Cache-busting versioned SVG asset names (`assets/<name>.<version>.svg`) with pruning of old versions
+- [x] `.github/dependabot.yml` for monthly GitHub Actions updates
 - [x] Profile README with banner, stats badges and stack section
 - [x] Automated profile-stats refresh script and workflow
 - [x] `.editorconfig` and `.gitattributes` added for consistent formatting
