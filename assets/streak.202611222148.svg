@@ -15,7 +15,7 @@
   <line x1="774.4" y1="35" x2="774.4" y2="135" class="divider"/>
 
   <g transform="translate(96.8,0)">
-    <text x="0" y="72" class="value" text-anchor="middle">7,996</text>
+    <text x="0" y="72" class="value" text-anchor="middle">8,022</text>
     <text x="0" y="98" class="label" text-anchor="middle">Total Contributions</text>
     <text x="0" y="130" class="range" text-anchor="middle">2019 - Present</text>
   </g>
@@ -32,13 +32,13 @@
   </g>
 
   <g transform="translate(484,0)">
-    <text x="0" y="72" class="value" text-anchor="middle">173</text>
+    <text x="0" y="72" class="value" text-anchor="middle">183</text>
     <text x="0" y="98" class="label" text-anchor="middle">Longest Streak</text>
-    <text x="0" y="130" class="range" text-anchor="middle">May 18 - Nov 6</text>
+    <text x="0" y="130" class="range" text-anchor="middle">May 8 - Nov 6</text>
   </g>
 
   <g transform="translate(677.5999999999999,0)">
-    <text x="0" y="72" class="value" text-anchor="middle">397</text>
+    <text x="0" y="72" class="value" text-anchor="middle">399</text>
     <text x="0" y="98" class="label" text-anchor="middle">Active Days</text>
     <text x="0" y="130" class="range" text-anchor="middle">16% of 2,561 days</text>
   </g>
