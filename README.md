@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.202611240903.svg" alt="banner" />
+<img src="assets/banner.202611250741.svg" alt="banner" />
 
 <a href="https://github.com/w1ck3ds0d4">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&height=50&lines=%3E+Software+Engineer;%3E+Platform+%26+DevSecOps;%3E+Security+%26+Compliance+Tooling;%3E+Desktop%2C+Web+%26+AI+Apps" alt="typing" />
@@ -114,12 +114,12 @@ Windows desktop app that picks a game from your Steam backlog when you can't dec
 
 <div align="center">
 
-<img src="assets/stats.202611240903.svg" alt="stats" />
+<img src="assets/stats.202611250741.svg" alt="stats" />
 
-<img src="assets/languages.202611240903.svg" alt="languages" />
+<img src="assets/languages.202611250741.svg" alt="languages" />
 
-<img src="assets/streak.202611240903.svg" alt="streak" />
+<img src="assets/streak.202611250741.svg" alt="streak" />
 
-<img src="assets/trophies.202611240903.svg" alt="trophies" />
+<img src="assets/trophies.202611250741.svg" alt="trophies" />
 
 </div>
