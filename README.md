@@ -89,11 +89,11 @@ Desktop app that diagnoses, repairs and supervises a modded RimWorld install. Lo
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/w1ck3ds0d4/Purrmadeath"><strong>Purrmadeath</strong></a>
+<a href="https://github.com/w1ck3ds0d4/Lodestar"><strong>Lodestar</strong></a>
 
-2D co-op roguelike survival with base building and a procedural world, for up to 4 players on a server-authoritative WebSocket game server.
+Local-first, real-time interview copilot for the desktop. It transcribes both sides of a call with speaker attribution and answers the other party's questions as short lines you can read aloud, with a fully local mode (on-device Whisper and Ollama) that keeps everything on the machine.
 
-`TypeScript` `Pixi.js` `Electron` `Node.js` `WebSocket`
+`Tauri` `Rust` `TypeScript` `React` `Whisper`
 
 </td>
 <td width="50%" valign="top">
