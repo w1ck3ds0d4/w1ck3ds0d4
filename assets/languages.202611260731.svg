@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="968" height="250" viewBox="0 0 968 250" fill="none" role="img">
+  <rect width="968" height="250" fill="#0a192f" rx="6"/>
+  <style>
+    .title { font: 700 15px "Segoe UI", Helvetica, sans-serif; fill: #64ffda; letter-spacing: 0.5px; }
+    .lang-name { font: 600 13px "Segoe UI", Helvetica, sans-serif; fill: #ccd6f6; }
+    .lang-pct { font: 400 13px "Segoe UI", Helvetica, sans-serif; fill: #8892b0; }
+  </style>
+  <text x="30" y="30" class="title">Most Used Languages</text>
+  <path d="M 130 67 A 78 78 0 1 1 60.83796220690179 181.064005993595 L 85.66536038903962 168.11795255999678 A 50 50 0 1 0 130 95 Z" fill="#3178c6"/><path d="M 60.83796220690179 181.064005993595 A 78 78 0 0 1 54.866339950120036 124.049269045948 L 81.8373974039231 131.57004426022309 A 50 50 0 0 0 85.66536038903962 168.11795255999678 Z" fill="#dea584"/><path d="M 54.866339950120036 124.049269045948 A 78 78 0 0 1 88.51795321009412 78.94517584521128 L 103.40894436544495 102.65716400334057 A 50 50 0 0 0 81.8373974039231 131.57004426022309 Z" fill="#7355dd"/><path d="M 88.51795321009412 78.94517584521128 A 78 78 0 0 1 106.97652311889166 70.47537646988701 L 115.2413609736485 97.22780542941476 A 50 50 0 0 0 103.40894436544495 102.65716400334057 Z" fill="#663399"/><path d="M 106.97652311889166 70.47537646988701 A 78 78 0 0 1 118.68795374151834 67.82463081108085 L 122.74868829584508 95.52860949428259 A 50 50 0 0 0 115.2413609736485 97.22780542941476 Z" fill="#f1e05a"/><path d="M 118.68795374151834 67.82463081108085 A 78 78 0 0 1 124.37792014084886 67.20287782920677 L 126.39610265439029 95.13004989051717 A 50 50 0 0 0 122.74868829584508 95.52860949428259 Z" fill="#e34c26"/><path d="M 124.37792014084886 67.20287782920677 A 78 78 0 0 1 126.78224026615355 67.06639991444489 L 127.93733350394459 95.04256404772107 A 50 50 0 0 0 126.39610265439029 95.13004989051717 Z" fill="#336790"/><path d="M 126.78224026615355 67.06639991444489 A 78 78 0 0 1 129.16908592475443 67.00442588326207 L 129.46736277227848 95.00283710465519 A 50 50 0 0 0 127.93733350394459 95.04256404772107 Z" fill="#89e051"/><path d="M 129.16908592475443 67.00442588326207 A 78 78 0 0 1 130.0000000000001 67 L 130.00000000000009 95 A 50 50 0 0 0 129.46736277227848 95.00283710465519 Z" fill="#012456"/>
+  
+    <rect x="290" y="69" width="12" height="12" rx="3" fill="#3178c6"/>
+    <text x="312" y="80" class="lang-name">TypeScript</text>
+    <text x="599" y="80" class="lang-pct" text-anchor="end">67.35%</text>
+    <rect x="290" y="99" width="12" height="12" rx="3" fill="#dea584"/>
+    <text x="312" y="110" class="lang-name">Rust</text>
+    <text x="599" y="110" class="lang-pct" text-anchor="end">11.98%</text>
+    <rect x="290" y="129" width="12" height="12" rx="3" fill="#7355dd"/>
+    <text x="312" y="140" class="lang-name">C#</text>
+    <text x="599" y="140" class="lang-pct" text-anchor="end">11.75%</text>
+    <rect x="290" y="159" width="12" height="12" rx="3" fill="#663399"/>
+    <text x="312" y="170" class="lang-name">CSS</text>
+    <text x="599" y="170" class="lang-pct" text-anchor="end">4.16%</text>
+    <rect x="290" y="189" width="12" height="12" rx="3" fill="#f1e05a"/>
+    <text x="312" y="200" class="lang-name">JavaScript</text>
+    <text x="599" y="200" class="lang-pct" text-anchor="end">2.45%</text>
+    <rect x="629" y="69" width="12" height="12" rx="3" fill="#e34c26"/>
+    <text x="651" y="80" class="lang-name">HTML</text>
+    <text x="938" y="80" class="lang-pct" text-anchor="end">1.17%</text>
+    <rect x="629" y="99" width="12" height="12" rx="3" fill="#336790"/>
+    <text x="651" y="110" class="lang-name">PLpgSQL</text>
+    <text x="938" y="110" class="lang-pct" text-anchor="end">0.49%</text>
+    <rect x="629" y="129" width="12" height="12" rx="3" fill="#89e051"/>
+    <text x="651" y="140" class="lang-name">Shell</text>
+    <text x="938" y="140" class="lang-pct" text-anchor="end">0.49%</text>
+    <rect x="629" y="159" width="12" height="12" rx="3" fill="#012456"/>
+    <text x="651" y="170" class="lang-name">PowerShell</text>
+    <text x="938" y="170" class="lang-pct" text-anchor="end">0.17%</text>
+</svg>
